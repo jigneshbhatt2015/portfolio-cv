@@ -110,7 +110,7 @@
 .c100.p99 .fill,
 .c100.p100 .fill {
   position: absolute;
-  border: 0.08em solid #307bbb;
+  border: 0.08em solid #ffb400;
   width: 0.84em;
   height: 0.84em;
   clip: rect(0em, 0.5em, 1em, 0em);
@@ -629,7 +629,7 @@
   -moz-transform: rotate(162deg);
   -ms-transform: rotate(162deg);
   -o-transform: rotate(162deg);
-  transform: rotate(216deg);
+  transform: rotate(288deg);
 }
 .c100.p46 .bar {
   -webkit-transform: rotate(165.6deg);
