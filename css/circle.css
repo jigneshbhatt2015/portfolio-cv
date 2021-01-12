@@ -648,11 +648,11 @@
   transform: rotate(176.4deg);
 }
 .c100.p50 .bar {
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
+   -webkit-transform: rotate(342deg);
+  -moz-transform: rotate(342deg);
+  -ms-transform: rotate(342deg);
+  -o-transform: rotate(342deg);
+  transform: rotate(306deg);
 }
 .c100.p51 .bar {
   -webkit-transform: rotate(183.6deg);
@@ -757,7 +757,7 @@
   -moz-transform: rotate(234deg);
   -ms-transform: rotate(234deg);
   -o-transform: rotate(234deg);
-  transform: rotate(234deg);
+  transform: rotate(318deg);
 }
 .c100.p66 .bar {
   -webkit-transform: rotate(237.6deg);
@@ -967,7 +967,7 @@
   -moz-transform: rotate(342deg);
   -ms-transform: rotate(342deg);
   -o-transform: rotate(342deg);
-  transform: rotate(342deg);
+  transform: rotate(318deg);
 }
 .c100.p96 .bar {
   -webkit-transform: rotate(345.6deg);
