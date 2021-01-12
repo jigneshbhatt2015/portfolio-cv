@@ -1,4 +1,6 @@
 .rect-auto,
+.c100.p25 .slice,
+.c100.p45 .slice,
 .c100.p50 .slice,
 .c100.p51 .slice,
 .c100.p52 .slice,
@@ -54,6 +56,8 @@
 }
 .pie,
 .c100 .bar,
+.c100.p25 .fill,
+.c100.p45 .fill,
 .c100.p50 .fill,
 .c100.p51 .fill,
 .c100.p52 .fill,
@@ -118,6 +122,10 @@
   transform: rotate(0deg);
 }
 .pie-fill,
+.c100.p25 .bar:after,
+.c100.p25 .fill,
+.c100.p45 .bar:after,
+.c100.p45 .fill,
 .c100.p50 .bar:after,
 .c100.p50 .fill,
 .c100.p51 .bar:after,
@@ -481,7 +489,7 @@
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
-  transform: rotate(90deg);
+  transform: rotate(324deg);
 }
 .c100.p26 .bar {
   -webkit-transform: rotate(93.60000000000001deg);
@@ -621,7 +629,7 @@
   -moz-transform: rotate(162deg);
   -ms-transform: rotate(162deg);
   -o-transform: rotate(162deg);
-  transform: rotate(162deg);
+  transform: rotate(216deg);
 }
 .c100.p46 .bar {
   -webkit-transform: rotate(165.6deg);
@@ -929,7 +937,7 @@
   -moz-transform: rotate(320.40000000000003deg);
   -ms-transform: rotate(320.40000000000003deg);
   -o-transform: rotate(320.40000000000003deg);
-  transform: rotate(320.40000000000003deg);
+  transform: rotate(288.40000000000003deg);
 }
 .c100.p90 .bar {
   -webkit-transform: rotate(324deg);
@@ -971,7 +979,7 @@
   -moz-transform: rotate(342deg);
   -ms-transform: rotate(342deg);
   -o-transform: rotate(342deg);
-  transform: rotate(318deg);
+  transform: rotate(288deg);
 }
 .c100.p96 .bar {
   -webkit-transform: rotate(345.6deg);
