@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Blog - Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Template Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/preloader.min.css" rel="stylesheet">
+    <link href="css/circle.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- CSS Skin File -->
+    <link href="css/skins/yellow.css" rel="stylesheet">
+
+    <!-- Live Style Switcher - demo only -->
+    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
+    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
+    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css" />
+    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldenrod.css" />
+    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css" />
+    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
+    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css" />
+    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
+
+    <!-- Modernizr JS File -->
+    <script src="js/modernizr.custom.js"></script>
+</head>
+
+<body class="blog-post-6">
+<!-- Live Style Switcher Starts - demo only -->
+<div id="switcher" class="">
+    <div class="content-switcher">
+        <h4>STYLE SWITCHER</h4>
+        <ul>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="img/styleswitcher/purple.png" alt="purple"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="img/styleswitcher/red.png" alt="red"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img src="img/styleswitcher/blueviolet.png" alt="blueviolet"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="img/styleswitcher/blue.png" alt="blue"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="img/styleswitcher/goldenrod.png" alt="goldenrod"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img src="img/styleswitcher/magenta.png" alt="magenta"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="img/styleswitcher/yellowgreen.png" alt="yellowgreen"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="img/styleswitcher/orange.png" alt="orange"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="img/styleswitcher/green.png" alt="green"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="img/styleswitcher/yellow.png" alt="yellow"/></a>
+            </li>
+        </ul>
+
+       <div id="hideSwitcher">&times;</div>
+    </div>
+</div>
+<div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
+<!-- Live Style Switcher Ends - demo only -->
+<!-- Header Starts -->
+<header class="header" id="navbar-collapse-toggle">
+    <!-- Fixed Navigation Starts -->
+    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+        <li class="icon-box">
+            <i class="fa fa-home"></i>
+            <a href="index.html">
+                <h2>Home</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-user"></i>
+            <a href="about.html">
+                <h2>About</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-briefcase"></i>
+            <a href="portfolio.html">
+                <h2>Portfolio</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-envelope-open"></i>
+            <a href="contact.html">
+                <h2>Contact</h2>
+            </a>
+        </li>
+        <li class="icon-box active">
+            <i class="fa fa-comments"></i>
+            <a href="blog.html">
+                <h2>Blog</h2>
+            </a>
+        </li>
+    </ul>
+    <!-- Fixed Navigation Ends -->
+    <!-- Mobile Menu Starts -->
+    <nav role="navigation" class="d-block d-lg-none">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="list-unstyled" id="menu">
+                <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+                <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+                <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+                <li class="active"><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Mobile Menu Ends -->
+</header>
+<!-- Header Ends -->
+<!-- Page Title Starts -->
+<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+    <h1>my <span>blog</span></h1>
+    <span class="title-bg">posts</span>
+</section>
+<!-- Page Title Ends -->
+<!-- Main Content Starts -->
+<section class="main-content revealator-slideup revealator-once revealator-delay1">
+    <div class="container">
+        <div class="row">
+            <!-- Article Starts -->
+            <article class="col-12">
+                <!-- Meta Starts -->
+                <div class="meta open-sans-font">
+                    <span><i class="fa fa-user"></i> Jignesh</span>
+                    <span class="date"><i class="fa fa-calendar"></i> 25 September 2020</span>
+                    <span><i class="fa fa-tags"></i> Mindfulness, Meditation, Wellbeing, Stress</span>
+                </div>
+                <!-- Meta Ends -->
+                <!-- Article Content Starts -->
+                <h1 class="text-uppercase text-capitalize">How Mindfulness can change your life</h1>
+                <img src="img/blog/blog-post-6.jpg" class="img-fluid" alt="Blog image"/>
+                <div class="blog-excerpt open-sans-font pb-5">
+                    <p>In today’s world, we are surrounded with a lot of distractions which only makes us less focused and engaged in the tasks that we are performing, in turn, has a direct impact on its output. We need to be mindful of all the perilous ways with which distractions affect our entire well-being. Mindfulness needs to be understood as a state where we pay a 100% attention to what we do. It could be listening or talking to a person, thinking about an idea, watching or observing something or any other task that is in hand. We need mindfulness more than ever now. It is said that an average person today is exposed to more information in a single day than someone in the 15th century was exposed to in his entire life.</p>
+                    <p>While we have learnt a lot of skills since childhood and continue to learn as ever, the one thing which was not taught to us during our education & learning phase was how to pay our attention fully and avoid all those things which distract our mind. Learning this skill of concentrating on one thing at a time without distracting enhances our output by almost 3x times in many ways. Practicing mindfulness is one form of training your mind to focus constantly on one thing without getting distracted to anything else. Unmindfulness is something where your mind is not where you are & Mindfulness is the exactly opposite to it where both mind and body are at the same place. A research says that we are distracted nearly half our life.</p>
+                    <p>Distraction can happen in many ways and every time when we switch your attention from one task to another, we take half a second in just switching. It is said that an average person checks his phone around 150 times a day. The fallout is we lose track of what we were doing and it takes a little more time in getting us back to the same attention level as before. Research states that whenever someone is doing a focused task and gets distracted to checking his emails and once he comes back to that task, he takes 64 seconds to come back to the attention level at which he was earlier working with. That’s pretty much an impact on our productivity when it comes down to taking stock of the no. of important activities completed during the day. We are also slowing down in the task that we intend to do as a result of switching. All these culminates into an increased stress and burnout that an individual experiences.</p>
+                    <p>Look at our attention as a lime-light which a performer normally hogs onto the stage. There are various things that occupies our mind at any given point in time. As we perform a task, a light is on it. The moment our mind wanders into something, a light moves onto it, similarly it keeps moving onto the various other things, until it comes back to the task it originally started. The idea is to ensure that this light stays on to one task/thing for longer than it usually does. An average human attention span is around 8 secs. It means that after every 8 secs, our mind hops on to something else compromising on the attention level required for its intended task.</p>
+                    <p><strong><u>Multi-tasking:</u></strong> There is a myth around for years that multi-tasking enhances one’s productivity. Multi-tasking is nothing but switching your attention from one task to another repeatedly as both the tasks are ongoing. Our brain can always process each bit of information sequentially and so multi-tasking forces our brain to switch from one bit of first task to another bit of second task and so on. This would always take a lot of time as compared to if done in a sequential manner. Even from a quality standpoint, taking up sequentially pays huge dividends.</p>
+                    <p>Let us look at the few ways using which we can enhance our concentration levels and increase our attention spans:</p>
+                    <p><strong><u>Meditation:</u></strong> Like I mentioned before, we need to train our mind to remain immune from distractions. As per its inherent nature, our mind would always wander as they are fluid and loves to hop on to something else, the moment it feels a little uncomfortable with the current idea/task. This needs to be controlled and minimized. However, you cannot control your thoughts by using your willpower always. It needs to be naturally taken care of and it can only happen when you practice meditation. Meditation is about focusing on any one thing (normally your breathing as they say). That doesn’t mean that your mind would not wander at the time when we meditate. Meditation is about noticing your mind is wandering and you bring your mind back. While meditating when our mind wanders, we can look at the thoughts in a way it was originated and drifted away. We may have multiple thoughts during meditation and this is the way we need to treat them while ensuring that we bring our attention back to that one thing (breathing). We can notice the thoughts that originated in our mind without engaging with them. There could be many uncomfortable thoughts of your past or future, but the idea is to just observe them without engaging with them. This needs to be practiced on a daily basis and would help us to improve on bringing back our attention to the original tasks subconsciously.</p>
+                    <p><strong><u>Create Task-blocks:</u></strong> We cannot afford to get distracted while working on something that requires an intense concentration, given the kind of complexity that task has. Hence, it is important to create a time-blocks for the various tasks that you intend to complete in a day. These time-blocks can be created in your calendar so that you ensure that there is no other task you would even worry about or think of while performing the task that is designated in the given time-block. This would result in enhancing our productivity as well. By doing this, we train our mind to stop wandering the moment we are placed within an allotted time-block. We would also want to keep all those things at bay which distracts us continuously while we are on any task. Some tricks could be to keep your phone to another room so that your craving of continuously checking your phone is tamed. We can turn-off all other notifications in our system which may draw us towards either checking your emails or read any news. Another recommendation we may want to consider is keeping the time-block of such intense activity during that time of the day when we are at our natural best. In an entire day, there is always a time when we are at our natural best, i.e., when we are fresh and our mind is very active. And then we can create a separate time-block of those activities which needs an intense communication with team members and other people so that we only do those things during that time. These activities include, checking emails or attending meetings which are not so concentration intensive and hence can be done even during your non-peak hours. This would help train our mind to focus on only one task based on the time-blocks created.</p>
+                    <p><strong><u>Manage environment:</u></strong> Another reason our mind starts to wander is they hold onto any item or thing we may see around us. Hence, it is important to keep our environment uncluttered and clean so that our mind is not distracted to any untoward object or thing. Keeping a neat and tidy environment also keeps our mind sorted and sharp for it to focus on one thing. Cluttered environment naturally draws our attention, making our mind irritated and distracted. Other environmental habits we can follow is to designate a place based on the task we do. Designating a specific place to work, talking to people, reading or writing trains our mind over a period of time to focus on only that task without worrying about any other task. These techniques would sharply improve our productivity and we would end up doing a lot more tasks in a day than we would have thought of. Research says that our mind is highly inter-linked with the environment we work in and so our environment needs to be in a specific order that is acceptable to our mind.</p>
+                    <p><strong><u>Take Regular breaks:</u></strong> When we work for longer hours on a particular task which needs our 100% focus and attention, we bound to get tired as our mind gets saturated. Research says that our mind peaks for once in every 90 minutes. Hence, the moment our mind gets saturated, it craves heavily to hops onto something that is very reliving and relaxing. We need to unwind it for its superior performance in terms of its sharp focus and undivided attention on whatever our mind hooks on to. This can be done by taking regular breaks in between those large time-blocks. This would not only help our mind to loosen a little but also inculcate a habit of focusing on one thing for a longer time before a periodic break. Neurologically, it means establishing a strong linkage between neurons in a way it that it helps maintain that required level of attention span. Taking regular breaks also helps us move our body physically which is required for having a good blood-circulation in our brain for it to stay active and sharp.</p>
+                    <p>Amidst this VUCA world, it is imperative for the leaders of an organization to stay hooked-on to their “Why”: the compelling cause for which they set out in doing their business activities. The idea is how to navigate through these uncertainties and still advance their purpose and hold onto them. Project Managers play an instrumental role in driving the change by constantly reviewing their project goals against business needs. They act as change agents for an organization to implement new rules as per what an environment demands in terms of technology, tactics and processes.</p>
+                    <p> Keep Practicing. Nothing comes natural to us without practice. And our mind would be able to get rid of the inside chatter only when we practice meditation and other techniques constantly. To start with, we can go with a 5-min meditation daily on any time of the day as per our convenience. Only when we keep our external environment clean and manage your schedule with regular breaks, we can help our mind stay focused and minimize its wandering as much as we can. Practicing it on a daily basis can only help you reap great benefits.</p>
+                    <p> Practicing mindfulness is indeed very important for everyone, especially for the ones who are engaged in a critical fields. A surgeon operating patients and conducting surgery requires his 100% attention in carrying out his job. An army men needs to be alert and sharp when he is in his war zone. These professions involve a matter of life and death. A minor lapse in their attention could lead to someone’s death. Other fields like management & leadership in the corporate world. Leaders needs to practice mindful leadership wherein they get rid of their internal chatters completely so that they can focus on their people, market and business to understand them, based on which they can tailor out the organization’s strategy and align them with their deep-rooted “WHY”.  It also helps them do empathic communication with their people.</p>
+                    <p>It is not that mindful people can completely get rid of their distracting thoughts. Their minds do raise those thoughts. However, the major difference between those and others are that they focus their attention on where it was. They notice the thing which is going on in background and gently bring their attention back to their original task. Practicing mindfulness brings a host of benefits to us. It helps one increase their memory, reduce stress, improve social skills, increases productivity and enhances the whole emotional well-being.</p>
+                    <p>Thanks a lot for reading and feel free to comment.</p>
+                </div>
+                <!-- Article Content Ends -->
+            </article>
+            <!-- Article Ends -->
+        </div>
+    </div>
+</section>
+<!-- Template JS Files -->
+<script src="js/jquery-3.5.0.min.js"></script>
+<script src="js/styleswitcher.js"></script>
+<script src="js/preloader.min.js"></script>
+<script src="js/fm.revealator.jquery.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpGridGallery.js"></script>
+<script src="js/jquery.hoverdir.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+
+
+</html>

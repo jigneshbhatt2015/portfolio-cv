@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Blog - Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Template Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/preloader.min.css" rel="stylesheet">
+    <link href="css/circle.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- CSS Skin File -->
+    <link href="css/skins/yellow.css" rel="stylesheet">
+
+    <!-- Live Style Switcher - demo only -->
+    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
+    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
+    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css" />
+    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldenrod.css" />
+    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css" />
+    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
+    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css" />
+    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
+
+    <!-- Modernizr JS File -->
+    <script src="js/modernizr.custom.js"></script>
+</head>
+
+<body class="blog-post-5">
+<!-- Live Style Switcher Starts - demo only -->
+<div id="switcher" class="">
+    <div class="content-switcher">
+        <h4>STYLE SWITCHER</h4>
+        <ul>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="img/styleswitcher/purple.png" alt="purple"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="img/styleswitcher/red.png" alt="red"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img src="img/styleswitcher/blueviolet.png" alt="blueviolet"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="img/styleswitcher/blue.png" alt="blue"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="img/styleswitcher/goldenrod.png" alt="goldenrod"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img src="img/styleswitcher/magenta.png" alt="magenta"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="img/styleswitcher/yellowgreen.png" alt="yellowgreen"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="img/styleswitcher/orange.png" alt="orange"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="img/styleswitcher/green.png" alt="green"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="img/styleswitcher/yellow.png" alt="yellow"/></a>
+            </li>
+        </ul>
+
+       <div id="hideSwitcher">&times;</div>
+    </div>
+</div>
+<div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
+<!-- Live Style Switcher Ends - demo only -->
+<!-- Header Starts -->
+<header class="header" id="navbar-collapse-toggle">
+    <!-- Fixed Navigation Starts -->
+    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+        <li class="icon-box">
+            <i class="fa fa-home"></i>
+            <a href="index.html">
+                <h2>Home</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-user"></i>
+            <a href="about.html">
+                <h2>About</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-briefcase"></i>
+            <a href="portfolio.html">
+                <h2>Portfolio</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-envelope-open"></i>
+            <a href="contact.html">
+                <h2>Contact</h2>
+            </a>
+        </li>
+        <li class="icon-box active">
+            <i class="fa fa-comments"></i>
+            <a href="blog.html">
+                <h2>Blog</h2>
+            </a>
+        </li>
+    </ul>
+    <!-- Fixed Navigation Ends -->
+    <!-- Mobile Menu Starts -->
+    <nav role="navigation" class="d-block d-lg-none">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="list-unstyled" id="menu">
+                <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+                <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+                <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+                <li class="active"><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Mobile Menu Ends -->
+</header>
+<!-- Header Ends -->
+<!-- Page Title Starts -->
+<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+    <h1>my <span>blog</span></h1>
+    <span class="title-bg">posts</span>
+</section>
+<!-- Page Title Ends -->
+<!-- Main Content Starts -->
+<section class="main-content revealator-slideup revealator-once revealator-delay1">
+    <div class="container">
+        <div class="row">
+            <!-- Article Starts -->
+            <article class="col-12">
+                <!-- Meta Starts -->
+                <div class="meta open-sans-font">
+                    <span><i class="fa fa-user"></i> Jignesh</span>
+                    <span class="date"><i class="fa fa-calendar"></i> 11 October 2020</span>
+                    <span><i class="fa fa-tags"></i> Strategy, Change Management, Project Management, Agile</span>
+                </div>
+                <!-- Meta Ends -->
+                <!-- Article Content Starts -->
+                <h1 class="text-uppercase text-capitalize">Project Management: The evolution and its way forward</h1>
+                <img src="img/blog/blog-post-5.jpg" class="img-fluid" alt="Blog image"/>
+                <div class="blog-excerpt open-sans-font pb-5">
+                    <p>In today’s dynamic business environment, where half of the organizational activities are wrapped up in projects, the project management has been a focal point for all the projects. The role of the project management has evolved over the years and they are being largely driven by the changing business landscape. Based on the organization’s changing goals and strategic objectives, the “ask” from a Project manager has changed and grown across the industries. With the changing dynamics among various external & internal stakeholders, there has been a greater focus on organizational effectiveness and efficiency which has led to the introduction of various project management practices, processes and tools only to optimize the management of organizational resources. Even after adopting such an instrumental role of project management by almost all organizations, research says that most projects still fall short on any or all of their project parameters: Schedule, Budget and Quality. And even if they meet all of them, they fail to meet their business objectives. Hence, it is inevitable for an organization to understand, adopt and apply the project management practices in such a way that helps them achieve strategic goals. The current trend in project management is even more challenging and they are expected to take up a much larger role in an organization than they used to, which we would cover in this article later.</p>
+                    <p><strong><u>The evolution of Project Management:</u></strong> While there were times when the project activities were executed in an organized way, the formal introduction of project management as a technique and tool was done only after 1950s. There were major complex projects that were executed across industries which demanded new approaches to project management. The famous Transcontinental Railroad project and the Polaris Missile project in US were some of those complex projects that were categorized by high uncertainty given the daunting task of accurately estimating its timelines and cost were involved. That’s when Gantt charts were invented by Henry Gantt. With its task bars and milestone markers, the sequence and duration of the tasks were outlined. With its growing popularity, Gantt charts were considered as the most adopted tool over the decades. It helped planning of the project through phases. However, based on the different scenarios around, it became challenging to estimate the completion times of the project. That’s where Programme Evaluation Review Technique (PERT) came into play which helped estimating the time based on the most optimistic, pessimistic & most likely scenarios. To have a more definitive approach than PERT for project planning and scheduling, Critical Path Method (CPM) was developed. Both PERT and CPM was widely adopted by many organizations to carry out their project planning effectively.</p>
+                    <p>While these were being adopted in 1960s which was the era where the focus was majorly on scheduling and coordinating activities, the next decade of 1970s was on Teamwork and increased co-operation between team members. Organizations realized the need of integration where the team works as one entity and focus was on the greater output as a whole. That’s where roles were defined and team members were asked to follow processes.</p>
+                    <p>The next generation of 1980s saw the challenge of taking stable decisions by management to isolate the organization from the uncertainties surrounding it. It was all about managing risks effectively. That was also the time when the Personal Computers (PCs) market was setup along with its network connectivity. This made various low-cost project management software and tools accessible to all the organizations.</p>
+                    <p>The rapid cycle of changing business and customer demands in 1990s saw time-to-market as one of the most important driving force and hence organizations started figuring out the ways to reduce the lead time so as to make their product relevant at all times. That’s when they adopted the collaborative approach over sequential one, where outcome and processes are thought upon simultaneously and not sequentially. That’s when even agile mode of delivery was crafted and organizations felt the need to adopt the same.</p>
+                    <p><strong><u>The future outlook of Project Management:</u></strong> The traditional project management has always been restricted to getting the job done and this field was always looked through the prism of the project delivery only. Now with changing business environments and global competition, the focus has expanded from a mere successful product delivery to achieving business results. It has become imperative for the project manager to think beyond having just smooth delivery. There is a clear distinction between operationally managed projects and strategically managed projects. Project Managers need to ensure that their product deliveries are in a complete alignment with the business goals and objectives. They need to strategically manage their products and would need to take into account the changing customer needs, their competitive advantage and the potential market success rather than sticking to the original scope and delivering it. It is important for them to review all the external parameters continuously to make sure their deliveries help organization achieve their business goals and gain that competitive edge. They are expected to have a long-term strategic perspective that creates a sustainable business value to their customers. They are also being expected to drive company’s profitability, boost ROI and have a positive impact on team’s efficiency and productivity. In today’s world, there are no lines drawn between any of the business functions like Product team, Tech team and Project Management team. The expectation is they are a unified team focused on creating better business outcomes.</p>
+                    <p>Another misconception in this field of project management is that there is a given set of methodologies and frameworks that needs to be followed, regardless of the kind of the project. There is no “one-size-fits-all” approach. Organizations need to adopt the right tailored approach for the right projects. The Projects executed in defense field could be different to that of IT. Software projects could be handled in a different way than the hardware projects. The reason why project category plays an important role here in identifying the right project management approach is because they differ their organizational purposes in many ways like strategic and capability alignment, difference between projects and ongoing operations and various other factors. Even within an organization, there could be various teams following their own style of executing the projects based on many factors like team size, business domain complexity, technical complexity and other geographical factors (Working remotely vs co-located). Although they follow the same scrum framework, the teams are allowed to choose their own way of working (WoW) and have a buffet of practices/strategies to choose from while ensuring that the enterprise-level governance strategies are being complied with. That is what Disciplined Agile framework is all about and this would be even more relevant in the times to come.</p>
+                    <p><strong><u>Conclusion:</u></strong> So the role of a Project management has come down a long way in its evolution and with the advent of new technology and other ever-changing business factors, this role will continue assuming the larger scheme of responsibilities in any given organization. Their adeptness and astuteness in managing projects blended with strong leadership skills will not only help them to build innovative ideas but also increases their ability to quickly react to the ever-changing needs within their industry. This would help businesses to always stay one notch ahead in their market segment and keep them insulated from any kind of potential economic adversities.</p>
+                    <p>Thanks a lot for reading and feel free to comment.</p>
+                </div>
+                <!-- Article Content Ends -->
+            </article>
+            <!-- Article Ends -->
+        </div>
+    </div>
+</section>
+<!-- Template JS Files -->
+<script src="js/jquery-3.5.0.min.js"></script>
+<script src="js/styleswitcher.js"></script>
+<script src="js/preloader.min.js"></script>
+<script src="js/fm.revealator.jquery.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpGridGallery.js"></script>
+<script src="js/jquery.hoverdir.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+
+
+</html>
