@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Blog - Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Template Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/preloader.min.css" rel="stylesheet">
+    <link href="css/circle.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- CSS Skin File -->
+    <link href="css/skins/yellow.css" rel="stylesheet">
+
+    <!-- Live Style Switcher - demo only -->
+    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
+    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
+    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css" />
+    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldenrod.css" />
+    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css" />
+    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
+    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css" />
+    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
+
+    <!-- Modernizr JS File -->
+    <script src="js/modernizr.custom.js"></script>
+</head>
+
+<body class="blog-post-15">
+<!-- Live Style Switcher Starts - demo only -->
+<div id="switcher" class="">
+    <div class="content-switcher">
+        <h4>STYLE SWITCHER</h4>
+        <ul>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="img/styleswitcher/purple.png" alt="purple"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="img/styleswitcher/red.png" alt="red"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img src="img/styleswitcher/blueviolet.png" alt="blueviolet"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="img/styleswitcher/blue.png" alt="blue"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="img/styleswitcher/goldenrod.png" alt="goldenrod"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img src="img/styleswitcher/magenta.png" alt="magenta"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="img/styleswitcher/yellowgreen.png" alt="yellowgreen"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="img/styleswitcher/orange.png" alt="orange"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="img/styleswitcher/green.png" alt="green"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="img/styleswitcher/yellow.png" alt="yellow"/></a>
+            </li>
+        </ul>
+
+       <div id="hideSwitcher">&times;</div>
+    </div>
+</div>
+<div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
+<!-- Live Style Switcher Ends - demo only -->
+<!-- Header Starts -->
+<header class="header" id="navbar-collapse-toggle">
+    <!-- Fixed Navigation Starts -->
+    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+        <li class="icon-box">
+            <i class="fa fa-home"></i>
+            <a href="index.html">
+                <h2>Home</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-user"></i>
+            <a href="about.html">
+                <h2>About</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-briefcase"></i>
+            <a href="portfolio.html">
+                <h2>Portfolio</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-envelope-open"></i>
+            <a href="contact.html">
+                <h2>Contact</h2>
+            </a>
+        </li>
+        <li class="icon-box active">
+            <i class="fa fa-comments"></i>
+            <a href="blog.html">
+                <h2>Blog</h2>
+            </a>
+        </li>
+    </ul>
+    <!-- Fixed Navigation Ends -->
+    <!-- Mobile Menu Starts -->
+    <nav role="navigation" class="d-block d-lg-none">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="list-unstyled" id="menu">
+                <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+                <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+                <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+                <li class="active"><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Mobile Menu Ends -->
+</header>
+<!-- Header Ends -->
+<!-- Page Title Starts -->
+<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+    <h1>my <span>blog</span></h1>
+    <span class="title-bg">posts</span>
+</section>
+<!-- Page Title Ends -->
+<!-- Main Content Starts -->
+<section class="main-content revealator-slideup revealator-once revealator-delay1">
+    <div class="container">
+        <div class="row">
+            <!-- Article Starts -->
+            <article class="col-12">
+                <!-- Meta Starts -->
+                <div class="meta open-sans-font">
+                    <span><i class="fa fa-user"></i> Jignesh</span>
+                    <span class="date"><i class="fa fa-calendar"></i> 21 March 2021</span>
+                    <span><i class="fa fa-tags"></i> Program Management, Culture of Innovation, Emotional Intelligence, Leadership</span>
+                </div>
+                <!-- Meta Ends -->
+                <!-- Article Content Starts -->
+                <h1 class="text-uppercase text-capitalize">The Growing Importance of Program Managers in aiding Business Change</h1>
+                <img src="img/blog/blog-post-15.jpg" class="img-fluid" alt="Blog image" style="margin:0 32%;" />
+                <div class="blog-excerpt open-sans-font pb-5">
+                    <p><br/>In my previous few articles, I wrote on how vital a Project Manager can be in catalyzing change & building business growth. In this article, I would like to explore the ways with which a program manager drives business change and helps organizations achieve strategic goals. It is no brainer that businesses are moving rapidly to keep up with the pace with which the global economy grows. Growing competition has coerced organizations across various industries to change their business model rapidly. This places a greater emphasis on disruptive innovation and the adoption of new technologies. To bring about this significant business change, organizations implement several key projects which are related to each other. In other words, the benefits that an organization realizes in delivering these projects are in complete alignment with the strategic goals. This is where the key aspect of Program management comes in. Program managers have an over-arching view of the set of projects having a clear focus on achieving overall business results. They are accountable for monitoring & controlling the projects in a way that delivers the business value incrementally over a period of time.</p>
+                    <p>The program manager looks after the overall program and outlines the benefits it intends to reap from it. These benefits encompass delivering a change or a new product, bringing digital transformation with the adoption of new technologies & replacing the legacy systems, improving efficiency in business processes, entering into a new market altogether, or expanding their existing market presence with upgraded products. Programs are broken down into a set of components which can be called sub-programs or projects and there are Project managers who manage those projects to achieve their project-specific objectives. Program Managers ensure that the combined outcome of these individual projects provides the larger benefits that are aligned with the program goals, which in turn augurs well with the organization’s strategic goals.</p>
+                    <p>In the absence of program managers, it really becomes a tough ask from project managers to balance their involvement in day-to-day tasks to keep their project under control with ensuring the project outcomes to be in sync with other related projects. This would not only burden PMs but also result in the project execution with no alignment with the business need. This is where the program managers’ role becomes crucial by keeping a single point of accountability for the project managers and acting as a focal point in directing the project outcomes towards the business goals. They provide a structured framework with appropriate governance processes to facilitate timely and effective decision making, navigating smoothly through the program environment. Having constant stakeholder engagement becomes one of the key factors in steering through uncertainty. They incorporate the principles, delivery methodologies & techniques to inculcate certainty and unambiguity across all project deliveries. They mentor project teams throughout their delivery lifecycles to ascertain that they understand the larger program goals and work towards achieving them. The program manager is also expected to provide regular updates on the direction where the program is heading towards along with the health and status of the projects under him.</p>
+                    <p> In order to bring about effective coordination and management of all the program’s projects to realize the projected benefits, program managers need to display a host of skills and bring a good amount of knowledge and experience to the table. A few of the skills are as follows:</p>
+                    <ul class="mycustom">
+                        <p><li> They need to have a clear program vision that they can communicate & sell to various stakeholders (Executives, Customers, Vendors, own team-members). They need to develop a sound business case for its necessary approvals. They also need to have the strategic foresight required to identify the changing market trends and their interplay with the program vision initially charted out. Their mindset should be to link every single program task to the organization’s goals.</li></p>
+                        <p><li>Program Managers encounter diverse situations in their daily life to deal with and so their superior analytical & situational thinking skills help them go a long way in building their problem-solving muscle. Funneling from the pool of data to derive the right insights and then applying a structured approach to analyze and identify the right response are a few of the ways with which they resolve issues daily.</li></p>
+                        <p><li>Competent program managers are great leaders. Their team-building & leadership skills are more in their application now than ever before. Given the diverse kind of stakeholders they deal with, they would need these skills to empower their team members, build relationships, collaborate with different functions, and work across cultures. Only with these skills, they would also be able to build the consensus required at all levels to advance their program goals further.</li></p>
+                        <p><li>Program Managers need to be adept at planning, monitoring & controlling their resources well. While this might seem to come from the project management arena, program managers need to perform these functions keeping a larger strategic outlook in their sight. Various plans need to be built for managing cost, risk, stakeholders along with the collection of program artifacts to ensure smooth execution of the program.</li></p>
+                        <p><li>Program Managers need to accelerate their program objectives amidst the political environment it operates in. They need to influence people's behavior in a way that is favorable in achieving programs’ outcomes. This demands a high level of influencing and negotiating skills. They need to be politically savvy and get a hold of those internal nuances that turn decisions in their programs’ favor. Having emotional skills and reading the involved stakeholder's minds can be handy in their quest to achieve their program goals.</li></p>
+                        </ul>
+                    <p>Given the ever-changing business landscape we live in, program managers need to be better prepared to deal with the ebbs & flows of market conditions. At an individual level, they need to assess their capability on the skills they are supposed to have and spend their time on their improvement areas while focusing on being consistent with their strengths. Being a subject matter expert on a particular niche would benefit them to become an expert to catalyze business change & foster the culture of creativity and innovation along the way.</p>
+                    <p>Thanks for reading . Please feel free to share your comments and feedback.</p>
+                </div>
+                <!-- Article Content Ends -->
+            </article>
+            <!-- Article Ends -->
+        </div>
+    </div>
+</section>
+<!-- Template JS Files -->
+<script src="js/jquery-3.5.0.min.js"></script>
+<script src="js/styleswitcher.js"></script>
+<script src="js/preloader.min.js"></script>
+<script src="js/fm.revealator.jquery.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpGridGallery.js"></script>
+<script src="js/jquery.hoverdir.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+
+
+</html>
