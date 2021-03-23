@@ -213,8 +213,13 @@
 <script src="js/custom.js"></script>
     
     <!--Google Sheets-->
+<script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
 <script>
-            const scriptURL = 'https://docs.google.com/spreadsheets/d/18_p25Oleq2iqnCmNF41X5bhkwDpIMOsI1grva2cK_RQ/edit#gid=0'
+
+
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbz5jDZi0HhO1sYT7H4JA_wUxk7b3_3h49trdTVTtNeLdJO_PqTejqZ217ZiSy3VqKzy/exec'
             const form = document.forms['google-sheet']
           
             form.addEventListener('submit', e => {
