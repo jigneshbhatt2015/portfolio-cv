@@ -173,17 +173,17 @@
             <!-- Left Side Ends -->
             <!-- Contact Form Starts -->
             <div class="col-12 col-lg-8">
-                <form class="contactform" method="post" name="google-sheet">
+                <form class="contactform" action="https://getform.io/f/bf79c2fd-5290-45ca-9a65-8f301dcf98bb" method="post">
                     <div class="contactform">
                         <div class="row">
                             <div class="col-12 col-md-4">
-                                <input type="text" name="Name" placeholder="YOUR NAME" value="" required=""/>
+                                <input type="text" name="name" placeholder="YOUR NAME" value="" required=""/>
                             </div>
                             <div class="col-12 col-md-4">
-                                <input type="email" name="Email" placeholder="YOUR EMAIL" value="" required=""/>
+                                <input type="email" name="email" placeholder="YOUR EMAIL" value="" required=""/>
                             </div>
                             <div class="col-12">
-                                <textarea name="Phone" placeholder="YOUR MESSAGE" value="" required=""></textarea>
+                                <textarea name="message" placeholder="YOUR MESSAGE" value="" required=""></textarea>
                                 <button type="submit" name="submit" value="Login" class="btn btn-contact">Send Message</button>
                             </div>
                             <div class="col-12 form-message">
@@ -216,7 +216,7 @@
 <!--<script src="https://wzrd.in/standalone/formdata-polyfill"></script>
 <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
 <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>-->
-<script>
+<!--<script>
 
 
             const scriptURL = 'https://script.google.com/macros/s/AKfycbz5jDZi0HhO1sYT7H4JA_wUxk7b3_3h49trdTVTtNeLdJO_PqTejqZ217ZiSy3VqKzy/exec'
@@ -228,6 +228,37 @@
                 .then(response => alert("Thanks for Contacting ..! I Will Contact You Soon..."))
                 .catch(error => console.error('Error!', error.message))
             })
+</script>-->
+<script>
+   var form = document.getElementById("form");
+   form.addEventListener("submit", formSubmit);
+
+   function formSubmit(e) {
+       e.preventDefault()
+
+       const formData = new FormData();
+       formData.append(
+           'name',
+           document.querySelector('input[name="name"]').value
+       )
+       formData.append(
+           'email',
+           document.querySelector('input[name="email"]').value
+       )
+       formData.append(
+           'message',
+           document.querySelector('input[name="message"]').value
+       )
+
+       fetch("https://getform.io/f/bf79c2fd-5290-45ca-9a65-8f301dcf98bb",
+       {
+           method: "POST",
+           body: formData,
+       })
+       .then(response => alert("Thanks for Contacting ..! I Will Contact You Soon..."))
+       .catch(error => console.log(error))
+       }
+
 </script>
 
 </body>
