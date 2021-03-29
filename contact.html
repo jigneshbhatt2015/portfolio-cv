@@ -255,7 +255,7 @@
            method: "POST",
            body: formData,
        })
-       .then(response => alert("Thanks for Contacting ..! I Will Contact You Soon..."))
+       .then(response => $(".output_message").text("Message Sent!"))
        .catch(error => console.log(error))
        }
 
