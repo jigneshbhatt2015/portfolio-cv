@@ -95,44 +95,16 @@
 		/*  AJAX CONTACT FORM
         /* ----------------------------------------------------------- */
 
-   var form = document.getElementById("form");
-   form.addEventListener("submit", formSubmit);
-
-   function formSubmit(e) {
-       e.preventDefault()
-
-       const formData = new FormData();
-       formData.append(
-           'name',
-           document.querySelector('input[name="name"]').value
-       )
-       formData.append(
-           'email',
-           document.querySelector('input[name="email"]').value
-       )
-       formData.append(
-           'message',
-           document.querySelector('input[name="message"]').value
-       )
-
-       fetch("https://getform.io/f/9b5abe9f-977e-4fb2-878c-39c466d36361",
-       {
-           method: "POST",
-           body: formData,
-       })
-       .then(response => alert("Thanks for Contacting ..! I Will Contact You Soon..."))
-       .catch(error => console.log(error))
-       }
 
 
 
-		/*$(".contactform").on("submit", function() {
+		$(".contactform").on("submit", function() {
 			$(".output_message").text("Message Sent!");
 
 			var form = $(this);
 			$.ajax({
-				url: form.attr("action"),
-				method: form.attr("method"),
+				url: "https://getform.io/f/9b5abe9f-977e-4fb2-878c-39c466d36361",
+				method: "POST",
 				data: form.serialize(),
 				success: function(result) {
 					if (result == "success") {
@@ -150,7 +122,7 @@
 			});
 
 			return false;
-		});*/
+		});
 
 	});
 
