@@ -94,6 +94,37 @@
 		/* ----------------------------------------------------------- */
 		/*  AJAX CONTACT FORM
         /* ----------------------------------------------------------- */
+<script>
+   var form = document.getElementById("form");
+   form.addEventListener("submit", formSubmit);
+
+   function formSubmit(e) {
+       e.preventDefault()
+
+       const formData = new FormData();
+       formData.append(
+           'name',
+           document.querySelector('input[name="name"]').value
+       )
+       formData.append(
+           'email',
+           document.querySelector('input[name="email"]').value
+       )
+       formData.append(
+           'message',
+           document.querySelector('input[name="message"]').value
+       )
+
+       fetch("https://getform.io/f/9b5abe9f-977e-4fb2-878c-39c466d36361",
+       {
+           method: "POST",
+           body: formData,
+       })
+       .then(response => alert("Thanks for Contacting ..! I Will Contact You Soon..."))
+       .catch(error => console.log(error))
+       }
+
+</script>
 
 		/*$(".contactform").on("submit", function() {
 			$(".output_message").text("Message Sent!");
