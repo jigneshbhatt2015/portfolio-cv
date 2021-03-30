@@ -94,7 +94,7 @@
 		/* ----------------------------------------------------------- */
 		/*  AJAX CONTACT FORM
         /* ----------------------------------------------------------- */
-<script>
+
    var form = document.getElementById("form");
    form.addEventListener("submit", formSubmit);
 
@@ -124,7 +124,7 @@
        .catch(error => console.log(error))
        }
 
-</script>
+
 
 		/*$(".contactform").on("submit", function() {
 			$(".output_message").text("Message Sent!");
