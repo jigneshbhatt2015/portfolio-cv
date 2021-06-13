@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Blog - Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Template Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/preloader.min.css" rel="stylesheet">
+    <link href="css/circle.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- CSS Skin File -->
+    <link href="css/skins/yellow.css" rel="stylesheet">
+
+    <!-- Live Style Switcher - demo only -->
+    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
+    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
+    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css" />
+    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldenrod.css" />
+    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css" />
+    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
+    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css" />
+    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
+
+    <!-- Modernizr JS File -->
+    <script src="js/modernizr.custom.js"></script>
+</head>
+
+<body class="blog-post-27">
+<!-- Live Style Switcher Starts - demo only -->
+<div id="switcher" class="">
+    <div class="content-switcher">
+        <h4>STYLE SWITCHER</h4>
+        <ul>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="img/styleswitcher/purple.png" alt="purple"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="img/styleswitcher/red.png" alt="red"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img src="img/styleswitcher/blueviolet.png" alt="blueviolet"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="img/styleswitcher/blue.png" alt="blue"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="img/styleswitcher/goldenrod.png" alt="goldenrod"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img src="img/styleswitcher/magenta.png" alt="magenta"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="img/styleswitcher/yellowgreen.png" alt="yellowgreen"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="img/styleswitcher/orange.png" alt="orange"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="img/styleswitcher/green.png" alt="green"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="img/styleswitcher/yellow.png" alt="yellow"/></a>
+            </li>
+        </ul>
+
+       <div id="hideSwitcher">&times;</div>
+    </div>
+</div>
+<div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
+<!-- Live Style Switcher Ends - demo only -->
+<!-- Header Starts -->
+<header class="header" id="navbar-collapse-toggle">
+    <!-- Fixed Navigation Starts -->
+    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+        <li class="icon-box">
+            <i class="fa fa-home"></i>
+            <a href="index.html">
+                <h2>Home</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-user"></i>
+            <a href="about.html">
+                <h2>About</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-briefcase"></i>
+            <a href="portfolio.html">
+                <h2>Portfolio</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-envelope-open"></i>
+            <a href="contact.html">
+                <h2>Contact</h2>
+            </a>
+        </li>
+        <li class="icon-box active">
+            <i class="fa fa-comments"></i>
+            <a href="blog.html">
+                <h2>Blog</h2>
+            </a>
+        </li>
+    </ul>
+    <!-- Fixed Navigation Ends -->
+    <!-- Mobile Menu Starts -->
+    <nav role="navigation" class="d-block d-lg-none">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="list-unstyled" id="menu">
+                <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+                <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+                <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+                <li class="active"><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Mobile Menu Ends -->
+</header>
+<!-- Header Ends -->
+<!-- Page Title Starts -->
+<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+    <h1>my <span>blog</span></h1>
+    <span class="title-bg">posts</span>
+</section>
+<!-- Page Title Ends -->
+<!-- Main Content Starts -->
+<section class="main-content revealator-slideup revealator-once revealator-delay1">
+    <div class="container">
+        <div class="row">
+            <!-- Article Starts -->
+            <article class="col-12">
+                <!-- Meta Starts -->
+                <div class="meta open-sans-font">
+                    <span><i class="fa fa-user"></i> Jignesh</span>
+                    <span class="date"><i class="fa fa-calendar"></i> 13 June 2021</span>
+                    <span><i class="fa fa-tags"></i> Mindfulness, Staying Positive, Task Management, Changing Perception, Task Breakdown</span>
+                </div>
+                <!-- Meta Ends -->
+                <!-- Article Content Starts -->
+                <h1 class="text-uppercase text-capitalize">7 Ways to Effectively Dealing with Pressure Situations</h1>
+                <img src="img/blog/blog-post-27.jpeg" class="img-fluid" alt="Blog image" style="margin:0 32%;" />
+                <div class="blog-excerpt open-sans-font pb-5">
+                    <p><br/>Dealing with pressure-like situations is one of the skills people need to master in this fast-moving world. Moving away from that steady & sedate lifecycle, we live in the times when every aspect of our life is volatile, wherein we need to deal with multiple variables at the same time, putting us under tremendous pressure in figuring out the ways to emerge out of it. Everyone deals with pressure throughout his life, personal or professional, and the real character of an individual comes out only while attempting to deal with it effectively. Your attempt to coping up with pressure shows a lot about your experience and maturity in evolving yourself as an individual. The manifestation of the pressure in your professional life could be in the form of anticipation of getting a pink slip from your organization, performing your job as per your boss’ yardstick, getting enough exposure to build your career organically, delivering within stringent deadlines, etc.</p>
+                    <p>As we understand that there is no way with which we can dispense with such situations, we need to learn the art of dealing with them in a productive & healthy way. We should develop a healthy relationship with the stress that is experienced out of such pressure situations. This can only help us to survive and thrive through such situations. In the corporate world, this is one of the sought-after skills that companies look out for in their employees. Hence learning and practicing how to cope with them separates us from others in showing our talent and potential in dealing with it. While there are many techniques one can follow, below are 7 important ways, I believe one should be taking cognizance of and practicing it regularly to effectively deal with pressure.</p>
+                    <p><strong><u>Focus on the Important Tasks:</u></strong> People often lands themselves in pressure situations when they are bounded by timelines when a task needs to be completed within the deadline (urgent tasks). You need to proactively avoid finding yourself in such situations by prioritizing tasks and focus on the important ones, to prevent them from getting converted into urgent ones. This is one of the rules of productivity as well. Avoid procrastinating and act on the tasks on time to make it your life ritual and breaking away from the habit of procrastinating things.</p>
+                    <p><strong><u>Stay in Present:</u></strong> In a pressure situation, you would be heavily tested on your temperament, reaction, and the way you think. You are expected to do things in a way you would have done in a normal situation, keeping yourself completely insulated from the noise around you. Consider doing the things that matter the most at a given point in time. Your body language, calmness, ability to think clearly through chaos will speak a lot about your comforts in dealing with such situations. It is important to stay in present and focus on what needs to be done now, rather than what went wrong in the past or the potential future consequences.</p>
+                    <p><strong><u>Breaking down your tasks:</u></strong> Whenever you find yourself in a stressful situation, always look to break down the complex task into smaller ones. This would give you some mental clarity and lets you focus on one element at a time rather than getting overwhelmed with the seemingly uphill challenge. Think about an end goal or objective and the process or steps to be taken to reach there. By disaggregating tasks, you feel lighter as you reckon simpler tasks and find yourself in complete control of the situation without allowing the stress to get better off you.</p>
+                    <p><strong><u>Changing your perception:</u></strong> Perception could be the toughest part to manage while you’re in the middle of such a situation. Sometimes you visualize it by getting afraid of some catastrophe that is too unlikely to happen. Focusing on the critical parts than looking at them in their totality would be the right anecdote to coping up with such feelings. Also, change the perception of the way pressure would affect you. Pressure situations shouldn’t always be looked at as a sign of adversity. Look at it as the means to grow yourself stronger. It’s a challenge you should readily accept to test your mental toughness.</p>
+                    <p><strong><u>Practice Mindfulness:</u></strong> Adopting this practice will build your mental ability to control your temperament and thought process, which in turn can keep you calm, focused, creative and flexible in such crunch situations. It also enhances clarity under chaotic situations. You should practice meditation daily by setting a fixed routine for yourself. Mindfulness is one form of mental exercise that can increase your attention spans and reduce stress levels.</p>
+                    <p><strong><u>Be Optimistic:</u></strong> Keep yourself engaged in tasks/activities that need to be done, without responding to the unnecessary arguments floating around. This will only distract you and put you under more pressure. You need to back yourself & stay positive while taking key decisions in such situations and proceed further without being worried about the potentially dire consequences. Great leaders believe in it and have always backed their instincts to combat stress & pressure.</p>
+                    <p><strong><u>Mental Readiness:</u></strong> Pressure situations are a part & parcel of everyone’s life. By expecting the unexpected, we prepare ourselves mentally to thrive through such situations. Projects are always accompanied by a thorough risk analysis, only to prepare the team well to anticipate and deal with potential pressures. Being mentally ready lets you take proactive steps to completely avoid or mitigate or stay fully prepared for such crunch situations.</p>
+                    <p>Staying calm, composed & focused plays a key role in building your ability to handle pressure. It is vital to not show off your stress either on your face or on your behavior. Even in Sports, we witness a lot of on-field situations where they have to deal with pressure, given the context of the game. During such times, team members look up to leaders for answers & that’s when as a leader he needs to exhibit his pressure coping skills. In the sports or corporate world, this is one skill you would be tested on and so it becomes imperative for us to get better at it by practicing the techniques to deal with it regularly.</p>
+                    <p>Thanks for reading . Please feel free to share your comments and feedback.</p>
+                </div>
+                <!-- Article Content Ends -->
+            </article>
+            <!-- Article Ends -->
+        </div>
+    </div>
+</section>
+<!-- Template JS Files -->
+<script src="js/jquery-3.5.0.min.js"></script>
+<script src="js/styleswitcher.js"></script>
+<script src="js/preloader.min.js"></script>
+<script src="js/fm.revealator.jquery.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpGridGallery.js"></script>
+<script src="js/jquery.hoverdir.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+
+
+</html>
