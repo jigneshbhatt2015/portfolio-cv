@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Blog - Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Template Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/preloader.min.css" rel="stylesheet">
+    <link href="css/circle.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- CSS Skin File -->
+    <link href="css/skins/yellow.css" rel="stylesheet">
+
+    <!-- Live Style Switcher - demo only -->
+    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
+    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
+    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css" />
+    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldenrod.css" />
+    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css" />
+    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
+    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css" />
+    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
+
+    <!-- Modernizr JS File -->
+    <script src="js/modernizr.custom.js"></script>
+</head>
+
+<body class="blog-post-29">
+<!-- Live Style Switcher Starts - demo only -->
+<div id="switcher" class="">
+    <div class="content-switcher">
+        <h4>STYLE SWITCHER</h4>
+        <ul>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="img/styleswitcher/purple.png" alt="purple"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="img/styleswitcher/red.png" alt="red"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img src="img/styleswitcher/blueviolet.png" alt="blueviolet"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="img/styleswitcher/blue.png" alt="blue"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="img/styleswitcher/goldenrod.png" alt="goldenrod"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img src="img/styleswitcher/magenta.png" alt="magenta"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="img/styleswitcher/yellowgreen.png" alt="yellowgreen"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="img/styleswitcher/orange.png" alt="orange"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="img/styleswitcher/green.png" alt="green"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="img/styleswitcher/yellow.png" alt="yellow"/></a>
+            </li>
+        </ul>
+
+       <div id="hideSwitcher">&times;</div>
+    </div>
+</div>
+<div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
+<!-- Live Style Switcher Ends - demo only -->
+<!-- Header Starts -->
+<header class="header" id="navbar-collapse-toggle">
+    <!-- Fixed Navigation Starts -->
+    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+        <li class="icon-box">
+            <i class="fa fa-home"></i>
+            <a href="index.html">
+                <h2>Home</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-user"></i>
+            <a href="about.html">
+                <h2>About</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-briefcase"></i>
+            <a href="portfolio.html">
+                <h2>Portfolio</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-envelope-open"></i>
+            <a href="contact.html">
+                <h2>Contact</h2>
+            </a>
+        </li>
+        <li class="icon-box active">
+            <i class="fa fa-comments"></i>
+            <a href="blog.html">
+                <h2>Blog</h2>
+            </a>
+        </li>
+    </ul>
+    <!-- Fixed Navigation Ends -->
+    <!-- Mobile Menu Starts -->
+    <nav role="navigation" class="d-block d-lg-none">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="list-unstyled" id="menu">
+                <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+                <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+                <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+                <li class="active"><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Mobile Menu Ends -->
+</header>
+<!-- Header Ends -->
+<!-- Page Title Starts -->
+<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+    <h1>my <span>blog</span></h1>
+    <span class="title-bg">posts</span>
+</section>
+<!-- Page Title Ends -->
+<!-- Main Content Starts -->
+<section class="main-content revealator-slideup revealator-once revealator-delay1">
+    <div class="container">
+        <div class="row">
+            <!-- Article Starts -->
+            <article class="col-12">
+                <!-- Meta Starts -->
+                <div class="meta open-sans-font">
+                    <span><i class="fa fa-user"></i> Jignesh</span>
+                    <span class="date"><i class="fa fa-calendar"></i> 27 June 2021</span>
+                    <span><i class="fa fa-tags"></i> Project Management, Problem Solving, Building Relationships, Collaboration, Visualization, Open Innovation, Positive Culture</span>
+                </div>
+                <!-- Meta Ends -->
+                <!-- Article Content Starts -->
+                <h1 class="text-uppercase text-capitalize">Problem-Solving Techniques in Project Management</h1>
+                <img src="img/blog/blog-post-29.jpeg" class="img-fluid" alt="Blog image" style="margin:0 32%;" />
+                <div class="blog-excerpt open-sans-font pb-5">
+                    <p><br/>Project Managers encounter a host of problems while managing the project, which they are expected to resolve. The wide spectrum of the levels of complexity requires them to have a wide variety of weapons in their arsenal in the form of problem-solving techniques. No matter how many risks they capture & how well they proactively plan for the unknown unknowns, there would be a number of issues they would be handling on a daily basis. With so many moving variables defining the fate of the project, the nature of problems varies with the project's size, their business objective, stakeholders involved, etc. These problems can be viewed as the pieces of the larger Jigsaw puzzle, i.e. the larger project environment, and only when these pieces are put at their right place can we solve the larger puzzle at hand.</p>
+                    <p>In order to resolve these potential issues rising throughout the project lifecycle, the people skills of project managers take the driver’s seat. All the analytical techniques revolving around problem-solving center around having great teamwork. Techniques like Brainstorming, Root-cause analysis, and Fishbone (Ishikawa) diagram can only be efficient in yielding results when they are accompanied by team collaboration & that’s where the people domain skills of project managers come in handy. They would be a facilitator in aligning the team to come up with the right approach to solve the issues, for the entire project to look in a good shape. Certain Problem-Solving frameworks already in vogue combine the best of agile principles, lean, design thinking & new ways of working. These frameworks require cohesive collaborative teams to work on them & this can be a challenge with more distributed teams working remotely these days. Below are a few techniques project managers need to adopt to promote the problem-solving culture in a project environment:</p>
+                    <p><strong><u>Creating an Open & Positive environment:</u></strong> Creating the right environment which inspires positivism, altruism, openness & honesty plays a much larger role in catalyzing effective problem-solving approaches in the project. The team should feel secured & safe to openly communicate the potential issue they may foresee in the project, which would help PM to proactively nip it in the bud, without it getting compounded further in the latter part of the project. They should feel free to voice their concerns, opinions & ideas for finding solutions collectively to the problems at hand. Building trust within the team members makes them collaborate freely & honestly, which is the necessary component in the joint problem-solving exercise. There shouldn’t be any demarcation on specific expertise or skills they possess & they are allowed to comment on any area they feel like when voicing their opinions during brainstorming. PMs need to imbibe this culture within the team to promote team collaboration.</p>
+                    <p><strong><u>Building Relationships with Stakeholders:</u></strong> Relationship-building is another element in the human skills that PMs need to focus on. They always come to their rescue when they are faced with a plethora of issues which they’re unable to find their way out. PMs need to work with senior management & the boss especially when they need to communicate something significant happening on the project. Building honest personal relationships with them, eases PM to deal with complex issues or any escalations they might be faced with. Strong relationships with the client also come in handy for PMs while operating within stringent timelines or during any difficult deliberations with their executive management. Strong bonds with the team members help PMs to deliver the project smoothly as the team would go out of their way to deliver the deliverables to make their PM appear in a good light.</p>
+                    <p><strong><u>Encourage Creative thinking:</u></strong> As Project Managers or Leaders, it is their responsibility to encourage out-of-box thinking within the team. PMs lay processes & frameworks for the team to follow through & deliver as per the expectations, however, going out of their set approach to resolving any complex issues coming their way should be something PMs should encourage & demonstrate to their team. Such innovative thinking would make their team stand out from the rest & puts them in good stead in taking newer problems head-on. With this ever-evolving business landscape, the nature of problems will vary & so the team needs to look out for creative ways which could be unprecedented. The out-of-the-box solution could become risky at times, however, the team shouldn’t be shying away from taking such risks for the larger interest of the project & their organization.</p>
+                    <p><strong><u>Visualization:</u></strong> The power of visualization should not be underestimated. The retention power of the brain increases significantly when visuals are created. By visualizing a problem, it becomes simpler for everyone to understand the problem & look at it in the same way. With visualization, all the impacted elements of the problem are being visualized & thoroughly analyzed by the team. This becomes easier for the team to reach its root cause & thereby finding the solution. It is the most transparent way to surface misunderstandings sooner & gain alignment on the approach thought-upon. The team can not only look at the problem as a big picture, but also the moving puzzles involved along with their relationships and dependencies which can force them to think about all the possible alternatives. One need not be an artist to sketch one’s project problem in a picture, but reasonably enough to make one’s team understand the nature & nuances of the problem they are faced with.</p>
+                    <p>Carefully evaluating all the possible alternatives & coming up with the right approach is one of the vital elements in problem-solving. And this can only happen when the team collectively flexes their creative muscle. Hence team collaboration forms the basis of problem-solving & PMs need to foster a collaborative culture within the team. Problem-solving requires one to articulate the problem clearly, where effective communication through visualization keeps the team aligned & in a good spirit. Project lifecycle can be impeded with several issues & resolving them in a timely fashion can only pave the way for its success.</p>
+                    <p>Thanks for reading . Please feel free to share your comments and feedback.</p>
+                </div>
+                <!-- Article Content Ends -->
+            </article>
+            <!-- Article Ends -->
+        </div>
+    </div>
+</section>
+<!-- Template JS Files -->
+<script src="js/jquery-3.5.0.min.js"></script>
+<script src="js/styleswitcher.js"></script>
+<script src="js/preloader.min.js"></script>
+<script src="js/fm.revealator.jquery.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpGridGallery.js"></script>
+<script src="js/jquery.hoverdir.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+
+
+</html>
