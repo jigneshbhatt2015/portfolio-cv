@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Blog - Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Template Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/preloader.min.css" rel="stylesheet">
+    <link href="css/circle.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- CSS Skin File -->
+    <link href="css/skins/yellow.css" rel="stylesheet">
+
+    <!-- Live Style Switcher - demo only -->
+    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
+    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
+    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css" />
+    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldenrod.css" />
+    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css" />
+    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
+    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css" />
+    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
+
+    <!-- Modernizr JS File -->
+    <script src="js/modernizr.custom.js"></script>
+</head>
+
+<body class="blog-post-32">
+<!-- Live Style Switcher Starts - demo only -->
+<div id="switcher" class="">
+    <div class="content-switcher">
+        <h4>STYLE SWITCHER</h4>
+        <ul>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="img/styleswitcher/purple.png" alt="purple"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="img/styleswitcher/red.png" alt="red"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img src="img/styleswitcher/blueviolet.png" alt="blueviolet"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="img/styleswitcher/blue.png" alt="blue"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="img/styleswitcher/goldenrod.png" alt="goldenrod"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img src="img/styleswitcher/magenta.png" alt="magenta"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="img/styleswitcher/yellowgreen.png" alt="yellowgreen"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="img/styleswitcher/orange.png" alt="orange"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="img/styleswitcher/green.png" alt="green"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="img/styleswitcher/yellow.png" alt="yellow"/></a>
+            </li>
+        </ul>
+
+       <div id="hideSwitcher">&times;</div>
+    </div>
+</div>
+<div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
+<!-- Live Style Switcher Ends - demo only -->
+<!-- Header Starts -->
+<header class="header" id="navbar-collapse-toggle">
+    <!-- Fixed Navigation Starts -->
+    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+        <li class="icon-box">
+            <i class="fa fa-home"></i>
+            <a href="index.html">
+                <h2>Home</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-user"></i>
+            <a href="about.html">
+                <h2>About</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-briefcase"></i>
+            <a href="portfolio.html">
+                <h2>Portfolio</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-envelope-open"></i>
+            <a href="contact.html">
+                <h2>Contact</h2>
+            </a>
+        </li>
+        <li class="icon-box active">
+            <i class="fa fa-comments"></i>
+            <a href="blog.html">
+                <h2>Blog</h2>
+            </a>
+        </li>
+    </ul>
+    <!-- Fixed Navigation Ends -->
+    <!-- Mobile Menu Starts -->
+    <nav role="navigation" class="d-block d-lg-none">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="list-unstyled" id="menu">
+                <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+                <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+                <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+                <li class="active"><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Mobile Menu Ends -->
+</header>
+<!-- Header Ends -->
+<!-- Page Title Starts -->
+<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+    <h1>my <span>blog</span></h1>
+    <span class="title-bg">posts</span>
+</section>
+<!-- Page Title Ends -->
+<!-- Main Content Starts -->
+<section class="main-content revealator-slideup revealator-once revealator-delay1">
+    <div class="container">
+        <div class="row">
+            <!-- Article Starts -->
+            <article class="col-12">
+                <!-- Meta Starts -->
+                <div class="meta open-sans-font">
+                    <span><i class="fa fa-user"></i> Jignesh</span>
+                    <span class="date"><i class="fa fa-calendar"></i> 25 July 2021</span>
+                    <span><i class="fa fa-tags"></i> Change Management Framework, Effective Leadership, Disruptive technology, Digital Transformation, Stakeholder Alignment, Business, Innovation</span>
+                </div>
+                <!-- Meta Ends -->
+                <!-- Article Content Starts -->
+                <h1 class="text-uppercase text-capitalize">Change Management Framework for Driving Digital Transformation</h1>
+                <img src="img/blog/blog-post-32.jpeg" class="img-fluid" alt="Blog image" style="margin:0 32%;" />
+                <div class="blog-excerpt open-sans-font pb-5">
+                    <p><br/>Change Management is one of the most important aspects to manage when it comes to managing large-scale projects. Changes are inevitable in a project, coming from any part of the project lifecycle & can have a significant impact on the overall project’s success criteria. To insulate from its adverse effect, there is a change management framework in place at a project level. Similar to this, we do need a change management strategy at an organizational level to absorb all the potential effects that various dynamics surrounding the business pose at them. Changing the business landscape paves way for new market opportunities, with customers shifting the way they choose & interact with their brands, forcing organizations to manage change. Technology is the key enabler these days to digitize their business offerings in the way customers expect. Faster time to market, hyper-customization & personalization & enhanced service quality puts changemakers at the helm to formulate a structured change management strategy to keep organizations agile, nimble & responsive to the ever-changing market demands.</p>
+                    <p>In order to keep up with the pace of such changing business needs, organizations are forced to change the way they run their businesses and adopt the new way of working. This calls for bringing a complete overhaul in multiple aspects like changing the business strategy, modernizing the existing legacy systems by embracing digital transformation, enhancing the productivity & efficiency of the workforce, improving ROI by effectively dealing with cost pressures, all these only to stay one notch ahead in gaining the competitive advantage. Bringing transformation in all these areas doesn’t come so easy & so we need the change management strategy at an organizational level. With no proper strategic direction, organizations resort to MSPs & outsource their systems & implementation to the third-party vendors only to keep pace with the changes faster. Businesses looking to embrace the digital transformation on their own, need to deal with various conundrums, right from having a concrete & coherent business direction to clear & concise communication across various departments & functions. Below are a few pointers that need to be worked towards to chalk out the right change management strategy:</p>
+                    <p><strong><u>Drive from the Top Leadership:</u></strong> Bringing a revolution across an organization can be possible if the change has been effected by the top leadership team. Before the change is boiled down & spread across various levels of an organization, leaders are expected to drive this from the forefront by establishing a well-articulated business strategy that can convince employees to invest themselves & support a change that has far-reaching benefits, both for them & organization. Looking at their leaders playing an active role in catalyzing the change, makes them feel more confident to be a part of it. Hence the leadership team can pervade the right culture that can carry out the desired transformation within an organization.</p>
+                    <p><strong><u>Stakeholder Alignment:</u></strong> Once teams believe in the transformation an organization is looking to bring out, they need to align themselves in a structured way to direct their efforts towards it. Project Managers/Leaders play a significant role in aligning teams across all levels with the strategic intent. Transformation comes from an individual & so PMs need to bring out that mindset shift & work on various team-engagement models to identify potential risks/issues & solve them. There will be natural dismay towards change wondering if their daily work life would change & in some cases, might feel replaced & disengaged. Hence leaders need to assuage their fears & promote efficient communication within the team to instill a sense of work within them. They need to drive collaboration & ensure they are high on their internal motivation in the quest of achieving the digital transformation. Leveraging human capital & bringing all of them around the real change is required to promote digital drives.</p>
+                    <p><strong><u>Assessing from all Directions:</u></strong> Change Management process need not be followed only because they are being forced. It needs to be carefully analyzed considering their societal & environmental impact as well. Professionals are increasingly aware of assessing the impact from an ethical front as well. In a bid to conquer the market, organizations need not indulge in any unlawful practices. This would cost them a lot more than operating in a non-transformation era. As a part of Change management, the impact of the company’s operations on communities needs to be meticulously assessed before implementing it. For organizations to thrive & sustain, they need to promote ethos & drive cultural change in a way that teams need not focus solely on the product but the impact it would create on society.</p>
+                    <p><strong><u>Exhibiting Transformative leadership at all Levels:</u></strong> Bringing a change can never be a cakewalk, given there is no structured format or process to do so. Teams working towards this change go through a lot of unknowns & discovery phases that might require out-of-the-box thinking & creativity from individuals. This can only happen when leaders empower their teams & provide them with a secured & safe environment in which they can get the freedom to experiment & commit mistakes. ‘Fail fast’ philosophy needs to be inculcated & practiced. With distributed teams & remote working, leaders need to harness technology to foster collaboration between teams. Leaders need to inspire teams to look at the larger purpose behind the transformation so that they have a firm conviction in it & relate themselves to it.</p>
+                    <p>With this pandemic around, businesses are forced to embrace disruption faster than ever before. They need to adopt the agile mindset & become gymnastic by proactively charting out the future landscape than reactively waiting for it. Digital innovation forms the bottom-line on which the change management strategy is based out & with newer upcoming technologies like AI/ML & tools like DevOps, organizations need to fast-track their digital transformation process to stay a notch ahead in the business environment they operate in.</p>
+                    <p>Thanks for reading . Please feel free to share your comments and feedback.</p>
+                </div>
+                <!-- Article Content Ends -->
+            </article>
+            <!-- Article Ends -->
+        </div>
+    </div>
+</section>
+<!-- Template JS Files -->
+<script src="js/jquery-3.5.0.min.js"></script>
+<script src="js/styleswitcher.js"></script>
+<script src="js/preloader.min.js"></script>
+<script src="js/fm.revealator.jquery.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpGridGallery.js"></script>
+<script src="js/jquery.hoverdir.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+
+
+</html>
