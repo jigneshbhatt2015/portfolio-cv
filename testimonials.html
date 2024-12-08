@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Blog - Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Template Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/preloader.min.css" rel="stylesheet">
+    <link href="css/circle.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- CSS Skin File -->
+    <link href="css/skins/yellow.css" rel="stylesheet">
+
+    <!-- Live Style Switcher - demo only -->
+    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
+    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
+    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css" />
+    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldenrod.css" />
+    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css" />
+    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
+    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css" />
+    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
+
+    <!-- Modernizr JS File -->
+    <script src="js/modernizr.custom.js"></script>
+</head>
+
+<body class="blog-post">
+<!-- Live Style Switcher Starts - demo only -->
+<div id="switcher" class="">
+    <div class="content-switcher">
+        <h4>STYLE SWITCHER</h4>
+        <ul>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="img/styleswitcher/purple.png" alt="purple"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="img/styleswitcher/red.png" alt="red"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img src="img/styleswitcher/blueviolet.png" alt="blueviolet"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="img/styleswitcher/blue.png" alt="blue"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="img/styleswitcher/goldenrod.png" alt="goldenrod"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img src="img/styleswitcher/magenta.png" alt="magenta"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="img/styleswitcher/yellowgreen.png" alt="yellowgreen"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="img/styleswitcher/orange.png" alt="orange"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="img/styleswitcher/green.png" alt="green"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="img/styleswitcher/yellow.png" alt="yellow"/></a>
+            </li>
+        </ul>
+
+       <div id="hideSwitcher">&times;</div>
+    </div>
+</div>
+<div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
+<!-- Live Style Switcher Ends - demo only -->
+<!-- Header Starts -->
+<header class="header" id="navbar-collapse-toggle">
+    <!-- Fixed Navigation Starts -->
+    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+        <li class="icon-box">
+            <i class="fa fa-home"></i>
+            <a href="index.html">
+                <h2>Home</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-user"></i>
+            <a href="about.html">
+                <h2>About</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-briefcase"></i>
+            <a href="portfolio.html">
+                <h2>Portfolio</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-envelope-open"></i>
+            <a href="contact.html">
+                <h2>Contact</h2>
+            </a>
+        </li>
+        <li class="icon-box active">
+            <i class="fa fa-comments"></i>
+            <a href="blog.html">
+                <h2>Blog</h2>
+            </a>
+        </li>
+    </ul>
+    <!-- Fixed Navigation Ends -->
+    <!-- Mobile Menu Starts -->
+    <nav role="navigation" class="d-block d-lg-none">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="list-unstyled" id="menu">
+                <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+                <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+                <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+                <li class="active"><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Mobile Menu Ends -->
+</header>
+<!-- Header Ends -->
+<!-- Page Title Starts -->
+<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+    <h1><span>Testimonials</span></h1>
+    <span class="title-bg">posts</span>
+</section>
+<!-- Page Title Ends -->
+<!-- Main Content Starts -->
+<section class="main-content revealator-slideup revealator-once revealator-delay1">
+    <div class="container">
+        <div class="row">
+            <!-- Article Starts -->
+            <article class="col-12">
+                <!-- Meta Starts 
+                <div class="meta open-sans-font">
+                    <span><i class="fa fa-user"></i> Jignesh</span>
+                    <span class="date"><i class="fa fa-calendar"></i> 7 February 2021</span>
+                    <span><i class="fa fa-tags"></i> Leadership, VUCA world, Project Manager, Agile</span>
+                </div> -->
+                <!-- Meta Ends -->
+                <!-- Article Content Starts 
+                <h1 class="text-uppercase text-capitalize">Importance of Project Management in the VUCA world</h1>-->
+                <img src="img/blog/award photo.jpeg" class="img-fluid" alt="Blog image"/>
+                <div class="blog-excerpt open-sans-font pb-5">
+                    <p><br/>I had the pleasure of working with Jignesh Bhatt, an outstanding Staff Technical Project Manager. Our collaboration on various projects at GEHC demonstrated Jignesh’s exceptional leadership, strategic thinking, and delivery expertise.
+                    Jignesh excels in:
+                    • Project planning, execution, and delivery
+                    • Stakeholder management and communication
+                    • Inspiring team leadership and collaboration
+                    A valuable asset to any team
+                                ---------- Rajeev Ranjan, Director of Engineering, GE Healthcare</p>
+                    <p><strong><u>Collaborative Leadership:</u></strong> Agile philosophy has coined a new term called “Servant-leadership” which bears a strong relationship with having collaborative leadership. This leadership style helps to connect with teams within and across departments to take up key decisions required in keeping teams aligned and streamlining various processes. This creates an inclusive environment with a shared sense of responsibility wherein they contribute to something larger than themselves. This is one form of participative decision making as each one of them expresses their viewpoints in the larger interest of an organization. This lets organizations embrace leveraging on peoples’ skills, perspectives and opinions which are very critical in driving change in this VUCA world.</p>
+                    <p><strong><u>Fostering an agile culture:</u></strong> We talk a lot about Emotional intelligence (EQ) and its role in one’s personal growth. However, this trait has a strong bearing on driving and shaping an organization’s culture. The culture of any organization forms a backdrop of anything they intend to do. And in these uncertain times, the project manager with his EQ skills needs to inculcate the right mindset with the team so that they adapt the required flexible and robust strategy. Innovative thinking needs to be driven to explore different ways of implementing technology, defining processes and formulating policies. As a part of agile culture, a PM needs to scan through and take into account all the possible impacts an environment change might have, in order to build strategies that can offset the potential setbacks of volatility and uncertainties.</p>
+                    <p><strong><u>Strategic Networking:</u></strong> There won’t be any better time for Project Managers to shift their focus from doing a mere stakeholder engagement to forging long-term collaborative partnerships. Networking has always been the term frequently used in the corporate environment, as a necessary component for achieving career growth. However, at an organization level, networking across customers, competitors & partners provides the political flexibility and allegiance required to thrive under such changing times. Even at a project level, networking across the levels of an organization provides invaluable insights required to ensure having a complete congruence with the strategic goals at all times.</p>
+                    <p><strong><u>Establishing a feedback loop:</u></strong> PMs are protagonists in setting the ball rolling. They need to take a lead and establish the feedback loops required to learn and adopt a new strategy. This is also an underlying philosophy for being agile and a framework of continuous learning and improvement. Identify-Plan-Act-Reflect is the loop that inspires persistence through adversity and helps to make minor tweaks along the way based on the leanings gathered. This constant cycle allows an organization to monitor its progress against an external environment and take required actions to bring itself back on track, cushioning itself from any sort of potential setbacks. These loops need to be set by PMs in every aspect of its value-driven lifecycle. They are then can be scaled at an organizational level across all its processes and offerings, thereby, can form an integral part of its business strategy.</p>
+                    <p><strong><u>Enhancing team productivity:</u></strong> The key challenge for a Project Manager these days is to enhance the team’s productivity while working remotely. Team productivity has a direct impact on business outcomes and hence it cannot be over-looked. Various platforms are being used to connect with the members virtually for having frequent meetings and gathering status reports. Exercising power skills and entrusting people forms a core in achieving higher team productivity. Also, in modern times, there isn’t much need of having the same level of supervision in the past. Achieving business outcomes and the required corresponding actions should form a larger part in discussions than taking a mere work status.</p>
+                    <p>Amidst this VUCA world, it is imperative for the leaders of an organization to stay hooked-on to their “Why”: the compelling cause for which they set out in doing their business activities. The idea is how to navigate through these uncertainties and still advance their purpose and hold onto them. Project Managers play an instrumental role in driving the change by constantly reviewing their project goals against business needs. They act as change agents for an organization to implement new rules as per what an environment demands in terms of technology, tactics and processes.</p>
+                    <p>Thanks a lot for reading and feel free to comment.</p>
+                </div>
+                <!-- Article Content Ends -->
+            </article>
+            <!-- Article Ends -->
+        </div>
+    </div>
+</section>
+<!-- Template JS Files -->
+<script src="js/jquery-3.5.0.min.js"></script>
+<script src="js/styleswitcher.js"></script>
+<script src="js/preloader.min.js"></script>
+<script src="js/fm.revealator.jquery.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpGridGallery.js"></script>
+<script src="js/jquery.hoverdir.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+
+
+</html>
