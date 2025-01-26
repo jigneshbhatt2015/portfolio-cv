@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Blog - Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Template Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/preloader.min.css" rel="stylesheet">
+    <link href="css/circle.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- CSS Skin File -->
+    <link href="css/skins/yellow.css" rel="stylesheet">
+
+    <!-- Live Style Switcher - demo only -->
+    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
+    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
+    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css" />
+    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldenrod.css" />
+    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css" />
+    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
+    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css" />
+    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
+
+    <!-- Modernizr JS File -->
+    <script src="js/modernizr.custom.js"></script>
+</head>
+
+<body class="blog-post-42">
+<!-- Live Style Switcher Starts - demo only -->
+<div id="switcher" class="">
+    <div class="content-switcher">
+        <h4>STYLE SWITCHER</h4>
+        <ul>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="img/styleswitcher/purple.png" alt="purple"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="img/styleswitcher/red.png" alt="red"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img src="img/styleswitcher/blueviolet.png" alt="blueviolet"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="img/styleswitcher/blue.png" alt="blue"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="img/styleswitcher/goldenrod.png" alt="goldenrod"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img src="img/styleswitcher/magenta.png" alt="magenta"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="img/styleswitcher/yellowgreen.png" alt="yellowgreen"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="img/styleswitcher/orange.png" alt="orange"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="img/styleswitcher/green.png" alt="green"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="img/styleswitcher/yellow.png" alt="yellow"/></a>
+            </li>
+        </ul>
+
+       <div id="hideSwitcher">&times;</div>
+    </div>
+</div>
+<div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
+<!-- Live Style Switcher Ends - demo only -->
+<!-- Header Starts -->
+<header class="header" id="navbar-collapse-toggle">
+    <!-- Fixed Navigation Starts -->
+    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+        <li class="icon-box">
+            <i class="fa fa-home"></i>
+            <a href="index.html">
+                <h2>Home</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-user"></i>
+            <a href="about.html">
+                <h2>About</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-briefcase"></i>
+            <a href="portfolio.html">
+                <h2>Portfolio</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-envelope-open"></i>
+            <a href="contact.html">
+                <h2>Contact</h2>
+            </a>
+        </li>
+        <li class="icon-box active">
+            <i class="fa fa-comments"></i>
+            <a href="blog.html">
+                <h2>Blog</h2>
+            </a>
+        </li>
+    </ul>
+    <!-- Fixed Navigation Ends -->
+    <!-- Mobile Menu Starts -->
+    <nav role="navigation" class="d-block d-lg-none">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="list-unstyled" id="menu">
+                <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+                <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+                <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+                <li class="active"><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Mobile Menu Ends -->
+</header>
+<!-- Header Ends -->
+<!-- Page Title Starts -->
+<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+    <h1>my <span>blog</span></h1>
+    <span class="title-bg">posts</span>
+</section>
+<!-- Page Title Ends -->
+<!-- Main Content Starts -->
+<section class="main-content revealator-slideup revealator-once revealator-delay1">
+    <div class="container">
+        <div class="row">
+            <!-- Article Starts -->
+            <article class="col-12">
+                <!-- Meta Starts -->
+                <div class="meta open-sans-font">
+                    <span><i class="fa fa-user"></i> Jignesh</span>
+                    <span class="date"><i class="fa fa-calendar"></i> 15 September 2024</span>
+                    <span><i class="fa fa-tags"></i> GenAi In Ecommerce, Generative AI, Ecommerce trends, Digital Commerce</span>
+                </div>
+                <!-- Meta Ends -->
+                <!-- Article Content Starts -->
+                <h1 class="text-uppercase text-capitalize">How is Gen AI shaping up the dynamics of B2B Digital Commerce?</h1>
+                <img src="img/blog/blog-post-42.png" class="img-fluid" alt="Blog image" style="margin:0 32%;" />
+                <div class="blog-excerpt open-sans-font pb-5">
+                    <p><br/>In the rapidly evolving landscape of digital commerce, it’s imperative to observe the changing dynamics between B2B buyers and B2B sellers and, more importantly, the changes that B2B buyers have undergone in their purchasing behaviors. In order to empower sellers to meet demand and rising customer expectations, it’s crucial to understand the nuances around which purchasing features B2B buyers find most important, which sites they prefer to purchase from, and which technology they invest most in. This data point significantly helps B2B sellers to outline the strategy on how Gen AI and analytics can be leveraged to bring hyper-personalized customer engagement on the buying journey.</p>
+                    <p><img src="img/blog/blog-post-421.png" class="img-fluid" alt="Blog image" style="margin:0 32%;" /></p>
+                    <p>As per one of the research projects, the majority of B2B buyers come prepared with 55% having done at least significant pre-purchase research by the time they visit a seller. This means that B2B buyers spend a lot of time doing the pre-purchase market research looking at the key elements that are important to the purchasing experience like pricing, product they’re looking for & feature functionality in their purchasing process. AI helps sellers find out what attributes & behaviour (tied to the analytics) that buyers are looking for. With young generation coming in as digital B2B buyers, they want the seller side to make their job quicker, easier and more efficient.</p>
+                    <p>One of the other points to note about their purchasing behaviours is that these buying managers or purchasing teams visit umpteen e-commerce sites before making any purchasing decisions. AI plays a vital role here in finding ways for buyers to come to your site.</p>
+                    <p><img src="img/blog/blog-post-422.png" class="img-fluid" alt="Blog image" style="margin:0 32%;" /></p>
+                    <p>B2B buyers believe that brand manufacturers have the best information on their products and that going direct to these sites to buy B2B products is preferred, followed by consumer sites and Amazon Business. They prefer to buy B2B products directly from the brand that manufactures them vs. the distributor that sells them. They also prefer marketplaces that sell products from multiple sellers, as they get the greatest information to compare various brands in a much more convenient format. As per the research, 1 in 4 transactions emanates from Amazon business. That’s because Amazon business lists like Amazon itself. So, the personalization features, the user experiences, and the pricing models that people want are something Amazon sets up for their buyers. It’s worth noting that only one-third of total B2B transactions come directly from the distribution site. Hence the key takeaway here is to see how AI will help the selling side get in touch with the buyer side, looking at the myriads of ways these buyers come to your site. AI, by using their buying personas in analytics, can help selling team identify which channel can push their products out much faster than ever before.</p>
+                    <p>Coming to the elements B2B buyers take into account the most in their purchase experience, pricing, efficiency, and content topped the list.</p>
+                    <p><img src="img/blog/blog-post-423.png" class="img-fluid" alt="Blog image" style="margin:0 32%;" /></p>
+                    <p>The point that bothers B2B buyers is to ensure they’re buying the right products and do not want to get into the hassle of returns, improving efficiency. That’s where providing accurate product information that is targeted to their buyers plays an instrumental role while creating product descriptions and other related content. Here Gen AI can help write appealing and captivating content in terms of product image, title, and description that engages the buyers and encourages them to complete the purchasing process. On the pricing element, Gen AI can improve tactical pricing for B2B buyer personas.</p>
+                    <p>They’re also looking for websites where they get a better and more personalized user experience. To summarize a B2B user’s experience today: content, trust, and brand awareness are a few of the aspects they have on top of their minds today that sellers should ensure their businesses maintain.</p>
+                    <p><strong><u>Personalization:</u></strong> Personalization helps buyers look for the products they want, but sellers can be a little wary of offering hyper-personalization, as they present only that information that they’ve watched before, leaving out a whole bunch of their catalog that they might be interested in and they’ve never seen because they never clicked on it. It’s a whiplash effect in shopping behaviour where they can no longer find precisely what they’re looking for because there is an overload of similar products. Not just personalization, but it’s mandatory to also have recommendations that might be complementary or second- or third-tier products that customers are looking for.</p>
+                    <p>B2B is highly segmented. Gen AI shouldn’t just display results based on their past and present purchasing behaviors but should consider the larger context in terms of what industrial classification or what trade they are into and what job or project they are working for.</p>
+                    <p><strong><u>Content Creation:</u></strong> Gen AI can transform mundane product data into compelling product titles, attributes, and descriptions. Research says ~80% of the content is created that’s on par with what humans could write, and 10% is better, while 10% of it is worse. It’s fictionalized content—something the model creation companies are improving on to ensure that it’s not injected into the systems.</p>
+                    <p><strong><u>Pricing:</u></strong> Tactical pricing with these new tools is tied to the persona component. Gen AI enables businesses to adjust prices in real-time based on market conditions, customer behaviour, and competitor actions. AI algorithms analyze a multitude of factors, including supply and demand, inventory levels, competitor pricing, and customer purchasing patterns, to optimize pricing continuously.</p>
+                    <p>Gen AI also analyzes which pricing element impacts the buyers by comparing the total price of the order with the product price—total order costs have other shipping and fulfillment costs that AI can analyze and marry that with customer intelligence, customer attributes, product attributes, and feature extractions. Based on all these elements, Gen AI helps understand the interrelationships on what is impacting that price sensitivity and propensity.</p>
+                    <p>There are many more areas where Gen AI can be handy for B2B sellers, as shown in the above research graph, which I will cover in my next article. To conclude, AI helps sellers to understand what the buyer wants and make them for a quick and easy, convenient experience.</p>
+                    <p>While a lot can be done depending on where their pain points are, we need to take a step back and ensure that everything that we’re doing is driving towards a general strategy. We should always go back and review what we’re trying to accomplish to the overall goals and objectives and KPIs of an organization to ensure that what we are doing will be driving value for the organization and not just because it’s an amazing new and trendy technology.</p>
+                    <p>Thanks for reading . Please feel free to share your comments and feedback.</p>
+                </div>
+                <!-- Article Content Ends -->
+            </article>
+            <!-- Article Ends -->
+        </div>
+    </div>
+</section>
+<!-- Template JS Files -->
+<script src="js/jquery-3.5.0.min.js"></script>
+<script src="js/styleswitcher.js"></script>
+<script src="js/preloader.min.js"></script>
+<script src="js/fm.revealator.jquery.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpGridGallery.js"></script>
+<script src="js/jquery.hoverdir.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+
+
+</html>
