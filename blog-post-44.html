@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Blog - Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Template Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/preloader.min.css" rel="stylesheet">
+    <link href="css/circle.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- CSS Skin File -->
+    <link href="css/skins/yellow.css" rel="stylesheet">
+
+    <!-- Live Style Switcher - demo only -->
+    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
+    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
+    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css" />
+    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldenrod.css" />
+    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css" />
+    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
+    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css" />
+    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
+
+    <!-- Modernizr JS File -->
+    <script src="js/modernizr.custom.js"></script>
+</head>
+
+<body class="blog-post-44">
+<!-- Live Style Switcher Starts - demo only -->
+<div id="switcher" class="">
+    <div class="content-switcher">
+        <h4>STYLE SWITCHER</h4>
+        <ul>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="img/styleswitcher/purple.png" alt="purple"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="img/styleswitcher/red.png" alt="red"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img src="img/styleswitcher/blueviolet.png" alt="blueviolet"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="img/styleswitcher/blue.png" alt="blue"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="img/styleswitcher/goldenrod.png" alt="goldenrod"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img src="img/styleswitcher/magenta.png" alt="magenta"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="img/styleswitcher/yellowgreen.png" alt="yellowgreen"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="img/styleswitcher/orange.png" alt="orange"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="img/styleswitcher/green.png" alt="green"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="img/styleswitcher/yellow.png" alt="yellow"/></a>
+            </li>
+        </ul>
+
+       <div id="hideSwitcher">&times;</div>
+    </div>
+</div>
+<div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
+<!-- Live Style Switcher Ends - demo only -->
+<!-- Header Starts -->
+<header class="header" id="navbar-collapse-toggle">
+    <!-- Fixed Navigation Starts -->
+    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+        <li class="icon-box">
+            <i class="fa fa-home"></i>
+            <a href="index.html">
+                <h2>Home</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-user"></i>
+            <a href="about.html">
+                <h2>About</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-briefcase"></i>
+            <a href="portfolio.html">
+                <h2>Portfolio</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-envelope-open"></i>
+            <a href="contact.html">
+                <h2>Contact</h2>
+            </a>
+        </li>
+        <li class="icon-box active">
+            <i class="fa fa-comments"></i>
+            <a href="blog.html">
+                <h2>Blog</h2>
+            </a>
+        </li>
+    </ul>
+    <!-- Fixed Navigation Ends -->
+    <!-- Mobile Menu Starts -->
+    <nav role="navigation" class="d-block d-lg-none">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="list-unstyled" id="menu">
+                <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+                <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+                <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+                <li class="active"><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Mobile Menu Ends -->
+</header>
+<!-- Header Ends -->
+<!-- Page Title Starts -->
+<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+    <h1>my <span>blog</span></h1>
+    <span class="title-bg">posts</span>
+</section>
+<!-- Page Title Ends -->
+<!-- Main Content Starts -->
+<section class="main-content revealator-slideup revealator-once revealator-delay1">
+    <div class="container">
+        <div class="row">
+            <!-- Article Starts -->
+            <article class="col-12">
+                <!-- Meta Starts -->
+                <div class="meta open-sans-font">
+                    <span><i class="fa fa-user"></i> Jignesh</span>
+                    <span class="date"><i class="fa fa-calendar"></i> 11 January 2025</span>
+                    <span><i class="fa fa-tags"></i> Trends 2025, Program Management, Innovation, Leadership</span>
+                </div>
+                <!-- Meta Ends -->
+                <!-- Article Content Starts -->
+                <h1 class="text-uppercase text-capitalize">7 Top Program Management Trends to watch out for in 2025</h1>
+                <img src="img/blog/blog-post-44.png" class="img-fluid" alt="Blog image" style="margin:0 16%;" />
+                <div class="blog-excerpt open-sans-font pb-5">
+                    <p><br/>In this fast-paced, rapidly evolving business environment, the strategic business initiatives keep changing to constantly align themselves with customers & business expectations. Given the ushering era of technological innovation we live in, this dynamism is witnessed more than ever before. This paves the way for an exponential increase of programs, coupled with their extremely daunting challenge to be successful in such a VUCA environment, putting program teams under massive pressure. To excel in such an ecosystem, it’s imperative for PMs to be cognizant and stay ahead of the emerging trends. In this writeup, we’ll delve into a few of the key trends that PMs need to be aware of going into 2025 and beyond:</p>
+                    <p><strong><u>Adoption of Hybrid Frameworks:</u></strong> Integration of Agile and waterfall methodologies is gaining a lot of traction and has become a need of the hour when it comes to delivering complex programs. PMs need to be adept at tailoring these approaches, as per the program need to deliver program outcomes effectively & efficiently.</p>
+                    <p><strong><u>Content Creation:</u></strong> Gen AI can transform mundane product data into compelling product titles, attributes, and descriptions. Research says ~80% of the content is created that’s on par with what humans could write, and 10% is better, while 10% of it is worse. It’s fictionalized content—something the model creation companies are improving on to ensure that it’s not injected into the systems.</p>
+                    <p><strong><u>Shorter program lifecycles:</u></strong> There is a dire need to shorten the program lifecycle to achieve time-to-market as one of the major strategic objectives and answer customers’ needs faster than ever. PMs need to pivot and innovate their ways to optimize their program’s critical path while balancing speed with quality. They will need to streamline processes, prioritize the right tasks early in the lifecycle, and have strong rigor around quality and testing to avoid having product issues late in the cycle.</p>
+                    <p><strong><u>AI-Driven Decision-Making:</u></strong> There is a meteoric rise in Gen AI tools that PMs can leverage to perform their complex & strategic tasks. PMs stay at the crossroads of strategy, execution, and delivery to deliver value to the business. By strategically combining AI tools and understanding prompting techniques, PMs can forecast risks, optimize resource allocation, and enhance team collaboration through real-time insights, thus improving program outcomes. Gen AI can support decision-making with many interdependencies and variables. Expect to see more AI-powered tools integrated into project planning, risk management, and performance tracking.</p>
+                    <p><img src="img/blog/blog-post-441.png" class="img-fluid" alt="Blog image" style="margin:0 0%;" /></p>
+                    <p><strong><u>Automating the routine tasks:</u></strong> Gen AI can automate the tasks that are low in complexity and require little human intervention in their final output, like report generation, analyzing documents with multiple types of data, and summarizing meeting notes. It can also be utilized for assisting PMs in anticipating and analyzing risks, performing cost-benefit analysis, and planning and scheduling activities, leaving PMs to focus most of their time & efforts on strategic activities & value creation.</p>
+                    <p><strong><u>Soft Skills and Emotional Intelligence:</u></strong> If Gen-AI assists in activities like planning, scheduling, forecasts, and analysis, PMs need to focus on human elements like spotting burnouts, boosting the team’s motivation and morale, and improving productivity by possessing high EQ. Also, by having strong communication skills, empathy, and adaptability, PMs can drive collaboration, stakeholder engagement, resolve conflicts, and foster strong team relationships.</p>
+                    <p><strong><u>Data-driven program management:</u></strong> Given the volatility and uncertainty around the business need and customer demands, the demand for real-time data and metrics continues to grow. PMs can leverage these real-time metrics to derive actionable insights into program performance, benefits management, stakeholder satisfaction, and resource allocation.</p>
+                    <p><strong><u>Risk Management approach:</u></strong> An approach towards risk management is evolving beyond identifying and mitigating risks to anticipating opportunities in uncertain environments. Program managers will increasingly adopt proactive approaches, using AI-based scenario planning and simulation tools to navigate complex challenges.</p>
+                    
+                    <p>So, over the next decade, the project management labor force in seven sectors is expected to grow by 33 percent. It’s going to create nearly 22 million jobs around the world. As per one of the PMI research studies, only 33% of the org has adopted gen-AI tools for PM-level tasks that are being used mainly for documentation, summaries, and rephrasing. This substantiates the fact that there is a lot of room for Gen-AI’s adoption in the program management space. The future of program management is brighter with a lot of opportunities to dwell into, and hence it’s imperative for individuals to keep upskilling themselves in domains like AI, data science, and other emerging technologies. These skills, coupled with domain expertise, go a long way for PMs in accelerating their careers by driving innovation, excellence, and collaboration.</p>
+                    <p>Thanks for reading . Please feel free to share your comments and feedback.</p>
+                </div>
+                <!-- Article Content Ends -->
+            </article>
+            <!-- Article Ends -->
+        </div>
+    </div>
+</section>
+<!-- Template JS Files -->
+<script src="js/jquery-3.5.0.min.js"></script>
+<script src="js/styleswitcher.js"></script>
+<script src="js/preloader.min.js"></script>
+<script src="js/fm.revealator.jquery.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpGridGallery.js"></script>
+<script src="js/jquery.hoverdir.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+
+
+</html>
