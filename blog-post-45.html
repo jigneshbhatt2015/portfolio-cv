@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Blog - Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Template Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/preloader.min.css" rel="stylesheet">
+    <link href="css/circle.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- CSS Skin File -->
+    <link href="css/skins/yellow.css" rel="stylesheet">
+
+    <!-- Live Style Switcher - demo only -->
+    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
+    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
+    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css" />
+    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldenrod.css" />
+    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css" />
+    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
+    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css" />
+    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
+
+    <!-- Modernizr JS File -->
+    <script src="js/modernizr.custom.js"></script>
+</head>
+
+<body class="blog-post-45">
+<!-- Live Style Switcher Starts - demo only -->
+<div id="switcher" class="">
+    <div class="content-switcher">
+        <h4>STYLE SWITCHER</h4>
+        <ul>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="img/styleswitcher/purple.png" alt="purple"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="img/styleswitcher/red.png" alt="red"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img src="img/styleswitcher/blueviolet.png" alt="blueviolet"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="img/styleswitcher/blue.png" alt="blue"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="img/styleswitcher/goldenrod.png" alt="goldenrod"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img src="img/styleswitcher/magenta.png" alt="magenta"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="img/styleswitcher/yellowgreen.png" alt="yellowgreen"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="img/styleswitcher/orange.png" alt="orange"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="img/styleswitcher/green.png" alt="green"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="img/styleswitcher/yellow.png" alt="yellow"/></a>
+            </li>
+        </ul>
+
+       <div id="hideSwitcher">&times;</div>
+    </div>
+</div>
+<div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
+<!-- Live Style Switcher Ends - demo only -->
+<!-- Header Starts -->
+<header class="header" id="navbar-collapse-toggle">
+    <!-- Fixed Navigation Starts -->
+    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+        <li class="icon-box">
+            <i class="fa fa-home"></i>
+            <a href="index.html">
+                <h2>Home</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-user"></i>
+            <a href="about.html">
+                <h2>About</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-briefcase"></i>
+            <a href="portfolio.html">
+                <h2>Portfolio</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-envelope-open"></i>
+            <a href="contact.html">
+                <h2>Contact</h2>
+            </a>
+        </li>
+        <li class="icon-box active">
+            <i class="fa fa-comments"></i>
+            <a href="blog.html">
+                <h2>Blog</h2>
+            </a>
+        </li>
+    </ul>
+    <!-- Fixed Navigation Ends -->
+    <!-- Mobile Menu Starts -->
+    <nav role="navigation" class="d-block d-lg-none">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="list-unstyled" id="menu">
+                <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+                <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+                <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+                <li class="active"><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Mobile Menu Ends -->
+</header>
+<!-- Header Ends -->
+<!-- Page Title Starts -->
+<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+    <h1>my <span>blog</span></h1>
+    <span class="title-bg">posts</span>
+</section>
+<!-- Page Title Ends -->
+<!-- Main Content Starts -->
+<section class="main-content revealator-slideup revealator-once revealator-delay1">
+    <div class="container">
+        <div class="row">
+            <!-- Article Starts -->
+            <article class="col-12">
+                <!-- Meta Starts -->
+                <div class="meta open-sans-font">
+                    <span><i class="fa fa-user"></i> Jignesh</span>
+                    <span class="date"><i class="fa fa-calendar"></i> 26 January 2025</span>
+                    <span><i class="fa fa-tags"></i> Generative AI, Project Management, AI in Business, Leadership</span>
+                </div>
+                <!-- Meta Ends -->
+                <!-- Article Content Starts -->
+                <h1 class="text-uppercase text-capitalize">Unlocking Project Success: The Role of Generative AI in Project Delivery</h1>
+                <img src="img/blog/blog-post-45.png" class="img-fluid" alt="Blog image" style="margin:0 0%;" />
+                <div class="blog-excerpt open-sans-font pb-5">
+                    <p><br/>The success of project deliveries plays the most crucial role in driving the business strategy. Most of the enterprise projects are frequently plagued by delays, budget overruns, and scope creep, making missed deadlines almost a norm in business. That’s where project managers need to adapt to the newer ways of leading projects that revolve around improving a project’s efficacy — wherein they focus on the bigger picture and ensure they align their project goals with the overall business goals while empowering & trusting teams to manage the day-to-day routine tasks. One of the other ways is using the sophisticated technology and tools that can assist PMs in decision-making, risk assessment, stakeholder communication strategy, and many more, while PMs can channelize their time and energy in areas that need humans’ intervention and strategic decision, leaving data crunching and outputting with the machines. It’s all the more important for PMs to leverage these tools, as one of the PMI’s surveys (2021 Pulse of the Profession®) pointed out that 9.4% of project budgets are wasted due to poor performance.</p>
+                    <p>This article covers a few areas where Gen AI tools can prove handy for project managers, along with the names of Gen AI tools that can be considered:</p>
+                    <p><strong><u>Risk prediction and management:</u></strong> Risk management is one of the vital components in project management. Anticipating scenarios that can potentially derail or adversely impact the projects and identifying the corresponding risk mitigation strategies can be done using Gen AI by analyzing vast amounts of data to predict and mitigate risks. Tools like RiskLens, RiskWatchAI, Ayanza use AI algorithms to quantify and manage risk in financial terms, helping project managers prioritize their mitigation efforts based on potential impact.</p>
+                    <p><strong><u>Reporting and Estimation:</u></strong> Day-to-day repetitive tasks can be automated by sending estimates, task assignments, reports, and more to the appropriate individuals at the right time. Automation of repetitive tasks can free up valuable time for project teams to focus on more strategic activities. Gen AI tools like Asana and Trello, enhanced with AI capabilities, can automate task assignments, reminders, and progress tracking, thus improving efficiency and reducing administrative burdens.</p>
+                    <p><strong><u>Forecasting:</u></strong> Accurate forecasting is essential for successful project delivery, as it allows teams to anticipate future challenges and allocate resources effectively. Gen AI tools help project leaders to enhance projections. Given it can be trained on a lot of historic data, which humans can’t practically do, AI can help in enhancing the accuracy of the outcome, which helps PM to leverage the lessons learned or similar scenarios faced in the past project. Gen AI can also help project managers predict complexity & potential resource challenges on projects in the future. ForecastForge is one such example that uses machine learning to improve forecasting accuracy, providing insights into project timelines, costs, and resource requirements.</p>
+                    <p><strong><u>Monitoring & Controlling:</u></strong> Gen AI can issue alerts when data indicates potential issues with projects and also recommends alternative courses of action, along with the probability of getting the project back on track. Recommendations such as optimizing resource allocation, identifying the possibility of parallelizing tasks, or any other solution applied in the past projects for the similar scenario. Tools like ClickUp & Forecast can be used to track the project progress, and Resource Guru can be used to help project managers allocate resources dynamically, reducing the risk of overallocation or underutilization.</p>
+                    
+                    <p><strong><u>Stakeholder communications:</u></strong> This is another area where Gen AI tools can be leveraged to produce stakeholder analysis and the stakeholder engagement strategy of the same set of stakeholders from the historic data of the past projects. To manage stakeholder communication effectively, tools like Otter.ai and Notion are used in organizing and summarizing discussions, freeing up PMs’ time in sharing minutes and actions across stakeholders. Based on the communication logs by different SHs over the course of the project, these tools offer personality insights and also update the communication strategy for any stakeholder.</p>
+                    <p><strong><u>Quality assurance & control:</u></strong> It’s imperative for projects to maintain high-quality standards throughout the project lifecycle in their processes as well as in their products or services. Gen AI can enhance quality assurance processes by identifying patterns and anomalies that might be missed by humans. Applitools uses AI to automate visual testing, ensuring that applications perform as expected across different devices and environments.</p>
+                    
+                    <p>Today there is a minimal adoption of AI in the project management space. There is a lot of hesitation among businesses to leverage its capability, lacking trust in tools and algorithms to manage these significantly invested projects. The role of AI is mainly carved around assisting the PMs, and the key decision-making still lies with the humans. It is up to PMs to decide whether to trust the data presented by AI platforms or to follow AI recommendations. As per the IBM Global AI Adoption Index 2022, only 35% reported using AI in their business, and an additional 42 percent say they’re exploring AI.</p>
+                    <p>It’s of cognizance that it’s a new revolution we would be witnessing in this space, but attempts should be made to experiment with these tools for enterprise use. That’s when enterprises would learn about its benefits and shortcomings. In order for AI algorithms to generate useful insights, they need to be fed with large quantities of relevant, enterprise-specific data. Naturally, it will take time for people to accept that software can provide superior analysis and enhanced forecasts. However, when AI support is embraced as an essential component of project delivery, the quality of such delivery will improve.</p>
+                    <p>Thanks for reading . Please feel free to share your comments and feedback.</p>
+                </div>
+                <!-- Article Content Ends -->
+            </article>
+            <!-- Article Ends -->
+        </div>
+    </div>
+</section>
+<!-- Template JS Files -->
+<script src="js/jquery-3.5.0.min.js"></script>
+<script src="js/styleswitcher.js"></script>
+<script src="js/preloader.min.js"></script>
+<script src="js/fm.revealator.jquery.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpGridGallery.js"></script>
+<script src="js/jquery.hoverdir.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+
+
+</html>
